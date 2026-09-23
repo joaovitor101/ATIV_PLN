@@ -1,9 +1,12 @@
 import string
+import csv
 import nltk
+
 from nltk.stem import WordNetLemmatizer, RSLPStemmer
 
 
 # Recursos utilizados pelo NLTK
+
 nltk.download('punkt')
 nltk.download('stopwords')
 nltk.download('wordnet')
@@ -12,6 +15,7 @@ nltk.download('rslp')
 
 
 avaliacoes = [
+
     # 5 estrelas
     """ Envio muito rápido (apenas 4 dias), a caixa chegou um pouco danificada, o que é 
 típico do AliExpress. Quanto ao teclado, é muito bom e confortável de usar, parece 
@@ -116,11 +120,29 @@ para mim.""",
     """Mouse e teclado chegaram quebrados. O teclado RGB não liga de jeito nenhum, e o 
 mouse não faz clique direito porque veio com o botão descolado. É uma pena, 
 porque eu realmente gosto do fato de o teclado ser silencioso ao digitar.""",
+
 ]
 
 
-# Artigos que serão retiradas durante o processamento
+# Classificação de cada avaliação
+
+# 5 e 4 estrelas = positiva
+# 3 estrelas = neutra
+# 2 e 1 estrelas = negativa
+
+classificacoes = [
+    "positiva", "positiva", "positiva", "positiva", "positiva",
+    "positiva", "positiva", "positiva", "positiva", "positiva",
+    "neutra", "neutra", "neutra", "neutra", "neutra",
+    "negativa", "negativa", "negativa", "negativa", "negativa",
+    "negativa", "negativa", "negativa", "negativa", "negativa"
+]
+
+
+# Palavras que serão retiradas durante o processamento
+
 artigos = ['o', 'a', 'os', 'as', 'um', 'uma', 'uns', 'umas', 'the', 'an']
+
 stopwords = nltk.corpus.stopwords.words('portuguese')
 
 lematizador = WordNetLemmatizer()
@@ -128,6 +150,7 @@ stemmer = RSLPStemmer()
 
 
 # Contadores
+
 total_inicial = 0
 total_sem_artigos = 0
 total_sem_pontuacao = 0
@@ -151,12 +174,13 @@ with open(nome_arquivo, "w", encoding="utf-8") as arquivo:
         arquivo.write("-" * 80 + "\n")
         arquivo.write(f"AVALIAÇÃO {numero}\n")
         arquivo.write("-" * 80 + "\n")
-
-        arquivo.write(f"TEXTO ORIGINAL:\n\"{avaliacao.strip()}\"\n\n")
+        arquivo.write(f'TEXTO ORIGINAL:\n"{avaliacao.strip()}"\n\n')
 
 
         # 1 - Tokenização
+
         tokens = nltk.word_tokenize(avaliacao.lower())
+
         total_inicial += len(tokens)
 
         arquivo.write(
@@ -166,6 +190,7 @@ with open(nome_arquivo, "w", encoding="utf-8") as arquivo:
 
 
         # 2 - Remoção dos artigos
+
         tokens_sem_artigos = [
             palavra for palavra in tokens
             if palavra not in artigos
@@ -180,6 +205,7 @@ with open(nome_arquivo, "w", encoding="utf-8") as arquivo:
 
 
         # 3 - Remoção da pontuação
+
         tokens_sem_pontuacao = [
             palavra for palavra in tokens_sem_artigos
             if palavra not in string.punctuation
@@ -194,6 +220,7 @@ with open(nome_arquivo, "w", encoding="utf-8") as arquivo:
 
 
         # 4 - Remoção dos números
+
         tokens_sem_numeros = [
             palavra for palavra in tokens_sem_pontuacao
             if not palavra.isdigit()
@@ -208,6 +235,7 @@ with open(nome_arquivo, "w", encoding="utf-8") as arquivo:
 
 
         # 5 - Remoção das stopwords
+
         tokens_sem_stopwords = [
             palavra for palavra in tokens_sem_numeros
             if palavra not in stopwords
@@ -222,6 +250,7 @@ with open(nome_arquivo, "w", encoding="utf-8") as arquivo:
 
 
         # 6 - Lematização
+
         tokens_lematizados = [
             lematizador.lemmatize(palavra)
             for palavra in tokens_sem_stopwords
@@ -236,6 +265,7 @@ with open(nome_arquivo, "w", encoding="utf-8") as arquivo:
 
 
         # 7 - POS Tagging
+
         tags = nltk.pos_tag(tokens_lematizados)
 
         arquivo.write(
@@ -245,6 +275,7 @@ with open(nome_arquivo, "w", encoding="utf-8") as arquivo:
 
 
         # 8 - Radicalização
+
         tokens_radicalizados = [
             stemmer.stem(palavra)
             for palavra in tokens_lematizados
@@ -260,6 +291,7 @@ with open(nome_arquivo, "w", encoding="utf-8") as arquivo:
 
 
     # Resumo dos resultados
+
     arquivo.write("=" * 80 + "\n")
     arquivo.write("RESUMO DOS TOKENS\n")
     arquivo.write("=" * 80 + "\n")
@@ -275,5 +307,43 @@ with open(nome_arquivo, "w", encoding="utf-8") as arquivo:
     arquivo.write("=" * 80 + "\n")
 
 
-print(f"Arquivo '{nome_arquivo}' gerado com sucesso!")
+# Criação da base de dados com a frase limpa inteira em uma célula por linha
 
+with open("base_avaliacoes.csv", "w", newline="", encoding="utf-8-sig") as arquivo_csv:
+
+    # Define o separador como ponto e vírgula (;) para o Excel separar as colunas corretamente
+    escritor = csv.writer(arquivo_csv, delimiter=';')
+
+    # Cabeçalho da base
+    escritor.writerow([
+        "id_avaliacao",
+        "texto_processado",
+        "classificacao"
+    ])
+
+    for i, avaliacao in enumerate(avaliacoes):
+
+        tokens = nltk.word_tokenize(avaliacao.lower())
+
+        # Filtra os tokens após todas as etapas de limpeza
+        tokens_processados = [
+            palavra for palavra in tokens
+            if palavra not in artigos
+            and palavra not in string.punctuation
+            and not palavra.isdigit()
+            and palavra not in stopwords
+        ]
+
+        # Junta as palavras processadas em uma única string
+        texto_limpo = " ".join(tokens_processados)
+
+        # Escreve 1 linha por avaliação
+        escritor.writerow([
+            i + 1,
+            texto_limpo,
+            classificacoes[i]
+        ])
+
+
+print(f"Arquivo '{nome_arquivo}' gerado com sucesso!")
+print("Arquivo 'base_avaliacoes.csv' gerado com sucesso!")
