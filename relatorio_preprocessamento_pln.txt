@@ -1,0 +1,815 @@
+================================================================================
+RELATÓRIO DE PRÉ-PROCESSAMENTO DE TEXTO (PLN)
+================================================================================
+
+--------------------------------------------------------------------------------
+AVALIAÇÃO 1
+--------------------------------------------------------------------------------
+TEXTO ORIGINAL:
+"Envio muito rápido (apenas 4 dias), a caixa chegou um pouco danificada, o que é 
+típico do AliExpress. Quanto ao teclado, é muito bom e confortável de usar, parece 
+uma teclado mecânico, mas não é, não tem aquele som típico (clack clack) ao digitar. 
+Mas, para mim, isso é até melhor, trabalho com um PC e esse som pode ser irritante, 
+este teclado é perfeito para mim. 100 por cento recomendado. Ótimo custo-benefício."
+
+[1] TOKENIZAÇÃO (92 tokens):
+['envio', 'muito', 'rápido', '(', 'apenas', '4', 'dias', ')', ',', 'a', 'caixa', 'chegou', 'um', 'pouco', 'danificada', ',', 'o', 'que', 'é', 'típico', 'do', 'aliexpress', '.', 'quanto', 'ao', 'teclado', ',', 'é', 'muito', 'bom', 'e', 'confortável', 'de', 'usar', ',', 'parece', 'uma', 'teclado', 'mecânico', ',', 'mas', 'não', 'é', ',', 'não', 'tem', 'aquele', 'som', 'típico', '(', 'clack', 'clack', ')', 'ao', 'digitar', '.', 'mas', ',', 'para', 'mim', ',', 'isso', 'é', 'até', 'melhor', ',', 'trabalho', 'com', 'um', 'pc', 'e', 'esse', 'som', 'pode', 'ser', 'irritante', ',', 'este', 'teclado', 'é', 'perfeito', 'para', 'mim', '.', '100', 'por', 'cento', 'recomendado', '.', 'ótimo', 'custo-benefício', '.']
+
+[2] SEM ARTIGOS (87 tokens):
+['envio', 'muito', 'rápido', '(', 'apenas', '4', 'dias', ')', ',', 'caixa', 'chegou', 'pouco', 'danificada', ',', 'que', 'é', 'típico', 'do', 'aliexpress', '.', 'quanto', 'ao', 'teclado', ',', 'é', 'muito', 'bom', 'e', 'confortável', 'de', 'usar', ',', 'parece', 'teclado', 'mecânico', ',', 'mas', 'não', 'é', ',', 'não', 'tem', 'aquele', 'som', 'típico', '(', 'clack', 'clack', ')', 'ao', 'digitar', '.', 'mas', ',', 'para', 'mim', ',', 'isso', 'é', 'até', 'melhor', ',', 'trabalho', 'com', 'pc', 'e', 'esse', 'som', 'pode', 'ser', 'irritante', ',', 'este', 'teclado', 'é', 'perfeito', 'para', 'mim', '.', '100', 'por', 'cento', 'recomendado', '.', 'ótimo', 'custo-benefício', '.']
+
+[3] SEM PONTUAÇÃO (68 tokens):
+['envio', 'muito', 'rápido', 'apenas', '4', 'dias', 'caixa', 'chegou', 'pouco', 'danificada', 'que', 'é', 'típico', 'do', 'aliexpress', 'quanto', 'ao', 'teclado', 'é', 'muito', 'bom', 'e', 'confortável', 'de', 'usar', 'parece', 'teclado', 'mecânico', 'mas', 'não', 'é', 'não', 'tem', 'aquele', 'som', 'típico', 'clack', 'clack', 'ao', 'digitar', 'mas', 'para', 'mim', 'isso', 'é', 'até', 'melhor', 'trabalho', 'com', 'pc', 'e', 'esse', 'som', 'pode', 'ser', 'irritante', 'este', 'teclado', 'é', 'perfeito', 'para', 'mim', '100', 'por', 'cento', 'recomendado', 'ótimo', 'custo-benefício']
+
+[4] SEM NÚMEROS (66 tokens):
+['envio', 'muito', 'rápido', 'apenas', 'dias', 'caixa', 'chegou', 'pouco', 'danificada', 'que', 'é', 'típico', 'do', 'aliexpress', 'quanto', 'ao', 'teclado', 'é', 'muito', 'bom', 'e', 'confortável', 'de', 'usar', 'parece', 'teclado', 'mecânico', 'mas', 'não', 'é', 'não', 'tem', 'aquele', 'som', 'típico', 'clack', 'clack', 'ao', 'digitar', 'mas', 'para', 'mim', 'isso', 'é', 'até', 'melhor', 'trabalho', 'com', 'pc', 'e', 'esse', 'som', 'pode', 'ser', 'irritante', 'este', 'teclado', 'é', 'perfeito', 'para', 'mim', 'por', 'cento', 'recomendado', 'ótimo', 'custo-benefício']
+
+[5] SEM STOPWORDS (37 tokens):
+['envio', 'rápido', 'apenas', 'dias', 'caixa', 'chegou', 'pouco', 'danificada', 'típico', 'aliexpress', 'quanto', 'teclado', 'bom', 'confortável', 'usar', 'parece', 'teclado', 'mecânico', 'som', 'típico', 'clack', 'clack', 'digitar', 'mim', 'melhor', 'trabalho', 'pc', 'som', 'pode', 'irritante', 'teclado', 'perfeito', 'mim', 'cento', 'recomendado', 'ótimo', 'custo-benefício']
+
+[6] LEMATIZAÇÃO (37 tokens):
+['envio', 'rápido', 'apenas', 'dia', 'caixa', 'chegou', 'pouco', 'danificada', 'típico', 'aliexpress', 'quanto', 'teclado', 'bom', 'confortável', 'usar', 'parece', 'teclado', 'mecânico', 'som', 'típico', 'clack', 'clack', 'digitar', 'mim', 'melhor', 'trabalho', 'pc', 'som', 'pode', 'irritante', 'teclado', 'perfeito', 'mim', 'cento', 'recomendado', 'ótimo', 'custo-benefício']
+
+[7] POS TAGGING:
+[('envio', 'NN'), ('rápido', 'NN'), ('apenas', 'IN'), ('dia', 'NN'), ('caixa', 'NN'), ('chegou', 'NN'), ('pouco', 'NN'), ('danificada', 'NN'), ('típico', 'NN'), ('aliexpress', 'NN'), ('quanto', 'IN'), ('teclado', 'NN'), ('bom', 'NN'), ('confortável', 'NN'), ('usar', 'JJ'), ('parece', 'NN'), ('teclado', 'NN'), ('mecânico', 'NN'), ('som', 'NN'), ('típico', 'NN'), ('clack', 'NN'), ('clack', 'NN'), ('digitar', 'NN'), ('mim', 'NN'), ('melhor', 'NN'), ('trabalho', 'JJ'), ('pc', 'NN'), ('som', 'NN'), ('pode', 'NN'), ('irritante', 'NN'), ('teclado', 'NN'), ('perfeito', 'NN'), ('mim', 'NN'), ('cento', 'NN'), ('recomendado', 'NN'), ('ótimo', 'CD'), ('custo-benefício', 'NN')]
+
+[8] RADICALIZAÇÃO / STEMMING (37 tokens):
+['envi', 'rápid', 'apen', 'dia', 'caix', 'cheg', 'pouc', 'danific', 'típic', 'aliexpres', 'quant', 'tecl', 'bom', 'confort', 'us', 'parec', 'tecl', 'mecân', 'som', 'típic', 'clack', 'clack', 'digit', 'mim', 'melhor', 'trabalh', 'pc', 'som', 'pod', 'irrit', 'tecl', 'perfeit', 'mim', 'cent', 'recomend', 'ótim', 'custo-benefíci']
+
+--------------------------------------------------------------------------------
+AVALIAÇÃO 2
+--------------------------------------------------------------------------------
+TEXTO ORIGINAL:
+"Bonito, com uma qualidade muito boa, até acima da minha expectativa, e por um 
+preço justo. Realmente fiquei impressionado. Os botões são muito bons e o toque é 
+bem agradável. O mouse também achei muito bonito e gostei bastante dele. O som 
+também é muito bom. Ainda estou testando, porque acabou de chegar, então não 
+posso falar sobre a durabilidade ou o uso a longo prazo. Mas, até agora, estou muito 
+satisfeito e recomendo bastante!"
+
+[1] TOKENIZAÇÃO (89 tokens):
+['bonito', ',', 'com', 'uma', 'qualidade', 'muito', 'boa', ',', 'até', 'acima', 'da', 'minha', 'expectativa', ',', 'e', 'por', 'um', 'preço', 'justo', '.', 'realmente', 'fiquei', 'impressionado', '.', 'os', 'botões', 'são', 'muito', 'bons', 'e', 'o', 'toque', 'é', 'bem', 'agradável', '.', 'o', 'mouse', 'também', 'achei', 'muito', 'bonito', 'e', 'gostei', 'bastante', 'dele', '.', 'o', 'som', 'também', 'é', 'muito', 'bom', '.', 'ainda', 'estou', 'testando', ',', 'porque', 'acabou', 'de', 'chegar', ',', 'então', 'não', 'posso', 'falar', 'sobre', 'a', 'durabilidade', 'ou', 'o', 'uso', 'a', 'longo', 'prazo', '.', 'mas', ',', 'até', 'agora', ',', 'estou', 'muito', 'satisfeito', 'e', 'recomendo', 'bastante', '!']
+
+[2] SEM ARTIGOS (80 tokens):
+['bonito', ',', 'com', 'qualidade', 'muito', 'boa', ',', 'até', 'acima', 'da', 'minha', 'expectativa', ',', 'e', 'por', 'preço', 'justo', '.', 'realmente', 'fiquei', 'impressionado', '.', 'botões', 'são', 'muito', 'bons', 'e', 'toque', 'é', 'bem', 'agradável', '.', 'mouse', 'também', 'achei', 'muito', 'bonito', 'e', 'gostei', 'bastante', 'dele', '.', 'som', 'também', 'é', 'muito', 'bom', '.', 'ainda', 'estou', 'testando', ',', 'porque', 'acabou', 'de', 'chegar', ',', 'então', 'não', 'posso', 'falar', 'sobre', 'durabilidade', 'ou', 'uso', 'longo', 'prazo', '.', 'mas', ',', 'até', 'agora', ',', 'estou', 'muito', 'satisfeito', 'e', 'recomendo', 'bastante', '!']
+
+[3] SEM PONTUAÇÃO (66 tokens):
+['bonito', 'com', 'qualidade', 'muito', 'boa', 'até', 'acima', 'da', 'minha', 'expectativa', 'e', 'por', 'preço', 'justo', 'realmente', 'fiquei', 'impressionado', 'botões', 'são', 'muito', 'bons', 'e', 'toque', 'é', 'bem', 'agradável', 'mouse', 'também', 'achei', 'muito', 'bonito', 'e', 'gostei', 'bastante', 'dele', 'som', 'também', 'é', 'muito', 'bom', 'ainda', 'estou', 'testando', 'porque', 'acabou', 'de', 'chegar', 'então', 'não', 'posso', 'falar', 'sobre', 'durabilidade', 'ou', 'uso', 'longo', 'prazo', 'mas', 'até', 'agora', 'estou', 'muito', 'satisfeito', 'e', 'recomendo', 'bastante']
+
+[4] SEM NÚMEROS (66 tokens):
+['bonito', 'com', 'qualidade', 'muito', 'boa', 'até', 'acima', 'da', 'minha', 'expectativa', 'e', 'por', 'preço', 'justo', 'realmente', 'fiquei', 'impressionado', 'botões', 'são', 'muito', 'bons', 'e', 'toque', 'é', 'bem', 'agradável', 'mouse', 'também', 'achei', 'muito', 'bonito', 'e', 'gostei', 'bastante', 'dele', 'som', 'também', 'é', 'muito', 'bom', 'ainda', 'estou', 'testando', 'porque', 'acabou', 'de', 'chegar', 'então', 'não', 'posso', 'falar', 'sobre', 'durabilidade', 'ou', 'uso', 'longo', 'prazo', 'mas', 'até', 'agora', 'estou', 'muito', 'satisfeito', 'e', 'recomendo', 'bastante']
+
+[5] SEM STOPWORDS (39 tokens):
+['bonito', 'qualidade', 'boa', 'acima', 'expectativa', 'preço', 'justo', 'realmente', 'fiquei', 'impressionado', 'botões', 'bons', 'toque', 'bem', 'agradável', 'mouse', 'achei', 'bonito', 'gostei', 'bastante', 'som', 'bom', 'ainda', 'testando', 'porque', 'acabou', 'chegar', 'então', 'posso', 'falar', 'sobre', 'durabilidade', 'uso', 'longo', 'prazo', 'agora', 'satisfeito', 'recomendo', 'bastante']
+
+[6] LEMATIZAÇÃO (39 tokens):
+['bonito', 'qualidade', 'boa', 'acima', 'expectativa', 'preço', 'justo', 'realmente', 'fiquei', 'impressionado', 'botões', 'bons', 'toque', 'bem', 'agradável', 'mouse', 'achei', 'bonito', 'gostei', 'bastante', 'som', 'bom', 'ainda', 'testando', 'porque', 'acabou', 'chegar', 'então', 'posso', 'falar', 'sobre', 'durabilidade', 'uso', 'longo', 'prazo', 'agora', 'satisfeito', 'recomendo', 'bastante']
+
+[7] POS TAGGING:
+[('bonito', 'NN'), ('qualidade', 'NN'), ('boa', 'NN'), ('acima', 'NN'), ('expectativa', 'FW'), ('preço', 'NN'), ('justo', 'NN'), ('realmente', 'NN'), ('fiquei', 'NN'), ('impressionado', 'NN'), ('botões', 'NN'), ('bons', 'NNS'), ('toque', 'VBP'), ('bem', 'JJ'), ('agradável', 'NN'), ('mouse', 'NN'), ('achei', 'NN'), ('bonito', 'NN'), ('gostei', 'NN'), ('bastante', 'NN'), ('som', 'NN'), ('bom', 'NN'), ('ainda', 'NN'), ('testando', 'NN'), ('porque', 'NN'), ('acabou', 'NN'), ('chegar', 'NN'), ('então', 'NN'), ('posso', 'NN'), ('falar', 'JJ'), ('sobre', 'NN'), ('durabilidade', 'NN'), ('uso', 'JJ'), ('longo', 'NN'), ('prazo', 'NN'), ('agora', 'NN'), ('satisfeito', 'NN'), ('recomendo', 'NN'), ('bastante', 'NN')]
+
+[8] RADICALIZAÇÃO / STEMMING (39 tokens):
+['bonit', 'qual', 'boa', 'acim', 'expect', 'preç', 'just', 'real', 'fiq', 'impression', 'bot', 'bom', 'toqu', 'bem', 'agrad', 'mous', 'ach', 'bonit', 'gost', 'bast', 'som', 'bom', 'aind', 'test', 'porqu', 'acab', 'cheg', 'ent', 'poss', 'fal', 'sobr', 'durabil', 'uso', 'long', 'praz', 'agor', 'satisfeit', 'recom', 'bast']
+
+--------------------------------------------------------------------------------
+AVALIAÇÃO 3
+--------------------------------------------------------------------------------
+TEXTO ORIGINAL:
+"Impecável 10/10, bonito e confortável, boa cor, chegou em perfeito estado, a caixa 
+chegou sem nenhum dano... muito satisfeito, recomendado, peso 0,75 kg = 750 
+gramas."
+
+[1] TOKENIZAÇÃO (34 tokens):
+['impecável', '10/10', ',', 'bonito', 'e', 'confortável', ',', 'boa', 'cor', ',', 'chegou', 'em', 'perfeito', 'estado', ',', 'a', 'caixa', 'chegou', 'sem', 'nenhum', 'dano', '...', 'muito', 'satisfeito', ',', 'recomendado', ',', 'peso', '0,75', 'kg', '=', '750', 'gramas', '.']
+
+[2] SEM ARTIGOS (33 tokens):
+['impecável', '10/10', ',', 'bonito', 'e', 'confortável', ',', 'boa', 'cor', ',', 'chegou', 'em', 'perfeito', 'estado', ',', 'caixa', 'chegou', 'sem', 'nenhum', 'dano', '...', 'muito', 'satisfeito', ',', 'recomendado', ',', 'peso', '0,75', 'kg', '=', '750', 'gramas', '.']
+
+[3] SEM PONTUAÇÃO (25 tokens):
+['impecável', '10/10', 'bonito', 'e', 'confortável', 'boa', 'cor', 'chegou', 'em', 'perfeito', 'estado', 'caixa', 'chegou', 'sem', 'nenhum', 'dano', '...', 'muito', 'satisfeito', 'recomendado', 'peso', '0,75', 'kg', '750', 'gramas']
+
+[4] SEM NÚMEROS (24 tokens):
+['impecável', '10/10', 'bonito', 'e', 'confortável', 'boa', 'cor', 'chegou', 'em', 'perfeito', 'estado', 'caixa', 'chegou', 'sem', 'nenhum', 'dano', '...', 'muito', 'satisfeito', 'recomendado', 'peso', '0,75', 'kg', 'gramas']
+
+[5] SEM STOPWORDS (20 tokens):
+['impecável', '10/10', 'bonito', 'confortável', 'boa', 'cor', 'chegou', 'perfeito', 'estado', 'caixa', 'chegou', 'nenhum', 'dano', '...', 'satisfeito', 'recomendado', 'peso', '0,75', 'kg', 'gramas']
+
+[6] LEMATIZAÇÃO (20 tokens):
+['impecável', '10/10', 'bonito', 'confortável', 'boa', 'cor', 'chegou', 'perfeito', 'estado', 'caixa', 'chegou', 'nenhum', 'dano', '...', 'satisfeito', 'recomendado', 'peso', '0,75', 'kg', 'grama']
+
+[7] POS TAGGING:
+[('impecável', 'NN'), ('10/10', 'CD'), ('bonito', 'NN'), ('confortável', 'NN'), ('boa', 'NN'), ('cor', 'NN'), ('chegou', 'NN'), ('perfeito', 'NN'), ('estado', 'NN'), ('caixa', 'NN'), ('chegou', 'NN'), ('nenhum', 'JJ'), ('dano', 'NN'), ('...', ':'), ('satisfeito', 'NN'), ('recomendado', 'NN'), ('peso', 'NN'), ('0,75', 'CD'), ('kg', 'NN'), ('grama', 'NN')]
+
+[8] RADICALIZAÇÃO / STEMMING (20 tokens):
+['impec', '10/10', 'bonit', 'confort', 'boa', 'cor', 'cheg', 'perfeit', 'est', 'caix', 'cheg', 'nenhum', 'dan', '...', 'satisfeit', 'recomend', 'pes', '0,75', 'kg', 'gram']
+
+--------------------------------------------------------------------------------
+AVALIAÇÃO 4
+--------------------------------------------------------------------------------
+TEXTO ORIGINAL:
+"Não é ruim pelo preço. É de plástico, mas eu gosto, é simples. É uma membrana, 
+como esperado pelo visual. Ideal para iniciantes!"
+
+[1] TOKENIZAÇÃO (30 tokens):
+['não', 'é', 'ruim', 'pelo', 'preço', '.', 'é', 'de', 'plástico', ',', 'mas', 'eu', 'gosto', ',', 'é', 'simples', '.', 'é', 'uma', 'membrana', ',', 'como', 'esperado', 'pelo', 'visual', '.', 'ideal', 'para', 'iniciantes', '!']
+
+[2] SEM ARTIGOS (29 tokens):
+['não', 'é', 'ruim', 'pelo', 'preço', '.', 'é', 'de', 'plástico', ',', 'mas', 'eu', 'gosto', ',', 'é', 'simples', '.', 'é', 'membrana', ',', 'como', 'esperado', 'pelo', 'visual', '.', 'ideal', 'para', 'iniciantes', '!']
+
+[3] SEM PONTUAÇÃO (22 tokens):
+['não', 'é', 'ruim', 'pelo', 'preço', 'é', 'de', 'plástico', 'mas', 'eu', 'gosto', 'é', 'simples', 'é', 'membrana', 'como', 'esperado', 'pelo', 'visual', 'ideal', 'para', 'iniciantes']
+
+[4] SEM NÚMEROS (22 tokens):
+['não', 'é', 'ruim', 'pelo', 'preço', 'é', 'de', 'plástico', 'mas', 'eu', 'gosto', 'é', 'simples', 'é', 'membrana', 'como', 'esperado', 'pelo', 'visual', 'ideal', 'para', 'iniciantes']
+
+[5] SEM STOPWORDS (10 tokens):
+['ruim', 'preço', 'plástico', 'gosto', 'simples', 'membrana', 'esperado', 'visual', 'ideal', 'iniciantes']
+
+[6] LEMATIZAÇÃO (10 tokens):
+['ruim', 'preço', 'plástico', 'gosto', 'simple', 'membrana', 'esperado', 'visual', 'ideal', 'iniciantes']
+
+[7] POS TAGGING:
+[('ruim', 'NN'), ('preço', 'NN'), ('plástico', 'NN'), ('gosto', 'NN'), ('simple', 'JJ'), ('membrana', 'NN'), ('esperado', 'VBP'), ('visual', 'JJ'), ('ideal', 'NN'), ('iniciantes', 'NNS')]
+
+[8] RADICALIZAÇÃO / STEMMING (10 tokens):
+['ruim', 'preç', 'plás', 'gost', 'simpl', 'membr', 'esper', 'visual', 'ideal', 'inici']
+
+--------------------------------------------------------------------------------
+AVALIAÇÃO 5
+--------------------------------------------------------------------------------
+TEXTO ORIGINAL:
+"Muito satisfeito. É melhor do que eu esperava pelo preço que paguei. Estou muito 
+feliz com minha compra. O processo de compra e entrega foi rápido. A qualidade do 
+produto é satisfatória. Sim, eu recomendo."
+
+[1] TOKENIZAÇÃO (42 tokens):
+['muito', 'satisfeito', '.', 'é', 'melhor', 'do', 'que', 'eu', 'esperava', 'pelo', 'preço', 'que', 'paguei', '.', 'estou', 'muito', 'feliz', 'com', 'minha', 'compra', '.', 'o', 'processo', 'de', 'compra', 'e', 'entrega', 'foi', 'rápido', '.', 'a', 'qualidade', 'do', 'produto', 'é', 'satisfatória', '.', 'sim', ',', 'eu', 'recomendo', '.']
+
+[2] SEM ARTIGOS (40 tokens):
+['muito', 'satisfeito', '.', 'é', 'melhor', 'do', 'que', 'eu', 'esperava', 'pelo', 'preço', 'que', 'paguei', '.', 'estou', 'muito', 'feliz', 'com', 'minha', 'compra', '.', 'processo', 'de', 'compra', 'e', 'entrega', 'foi', 'rápido', '.', 'qualidade', 'do', 'produto', 'é', 'satisfatória', '.', 'sim', ',', 'eu', 'recomendo', '.']
+
+[3] SEM PONTUAÇÃO (33 tokens):
+['muito', 'satisfeito', 'é', 'melhor', 'do', 'que', 'eu', 'esperava', 'pelo', 'preço', 'que', 'paguei', 'estou', 'muito', 'feliz', 'com', 'minha', 'compra', 'processo', 'de', 'compra', 'e', 'entrega', 'foi', 'rápido', 'qualidade', 'do', 'produto', 'é', 'satisfatória', 'sim', 'eu', 'recomendo']
+
+[4] SEM NÚMEROS (33 tokens):
+['muito', 'satisfeito', 'é', 'melhor', 'do', 'que', 'eu', 'esperava', 'pelo', 'preço', 'que', 'paguei', 'estou', 'muito', 'feliz', 'com', 'minha', 'compra', 'processo', 'de', 'compra', 'e', 'entrega', 'foi', 'rápido', 'qualidade', 'do', 'produto', 'é', 'satisfatória', 'sim', 'eu', 'recomendo']
+
+[5] SEM STOPWORDS (16 tokens):
+['satisfeito', 'melhor', 'esperava', 'preço', 'paguei', 'feliz', 'compra', 'processo', 'compra', 'entrega', 'rápido', 'qualidade', 'produto', 'satisfatória', 'sim', 'recomendo']
+
+[6] LEMATIZAÇÃO (16 tokens):
+['satisfeito', 'melhor', 'esperava', 'preço', 'paguei', 'feliz', 'compra', 'processo', 'compra', 'entrega', 'rápido', 'qualidade', 'produto', 'satisfatória', 'sim', 'recomendo']
+
+[7] POS TAGGING:
+[('satisfeito', 'NN'), ('melhor', 'NN'), ('esperava', 'NN'), ('preço', 'NN'), ('paguei', 'NN'), ('feliz', 'NN'), ('compra', 'NN'), ('processo', 'NN'), ('compra', 'NN'), ('entrega', 'JJ'), ('rápido', 'NN'), ('qualidade', 'VBD'), ('produto', 'NN'), ('satisfatória', 'NNS'), ('sim', 'VBP'), ('recomendo', 'NN')]
+
+[8] RADICALIZAÇÃO / STEMMING (16 tokens):
+['satisfeit', 'melhor', 'esper', 'preç', 'pag', 'feliz', 'compr', 'process', 'compr', 'entreg', 'rápid', 'qual', 'produt', 'satisfatór', 'sim', 'recom']
+
+--------------------------------------------------------------------------------
+AVALIAÇÃO 6
+--------------------------------------------------------------------------------
+TEXTO ORIGINAL:
+"A caixa chegou em mau estado, mas o produto está em boas condições. Funciona 
+perfeitamente, emitindo um som muito suave ao usar as teclas. Não fica muito 
+firme; balança um pouco. Tem pernas extras para elevá-lo, mas, mesmo assim, o 
+conjunto não se mantém estável. As luzes iluminam muito bem e é muito confortável 
+de usar; as teclas podem ser removidas sem muita dificuldade, e tanto o mouse 
+quanto o teclado são bastante leves."
+
+[1] TOKENIZAÇÃO (87 tokens):
+['a', 'caixa', 'chegou', 'em', 'mau', 'estado', ',', 'mas', 'o', 'produto', 'está', 'em', 'boas', 'condições', '.', 'funciona', 'perfeitamente', ',', 'emitindo', 'um', 'som', 'muito', 'suave', 'ao', 'usar', 'as', 'teclas', '.', 'não', 'fica', 'muito', 'firme', ';', 'balança', 'um', 'pouco', '.', 'tem', 'pernas', 'extras', 'para', 'elevá-lo', ',', 'mas', ',', 'mesmo', 'assim', ',', 'o', 'conjunto', 'não', 'se', 'mantém', 'estável', '.', 'as', 'luzes', 'iluminam', 'muito', 'bem', 'e', 'é', 'muito', 'confortável', 'de', 'usar', ';', 'as', 'teclas', 'podem', 'ser', 'removidas', 'sem', 'muita', 'dificuldade', ',', 'e', 'tanto', 'o', 'mouse', 'quanto', 'o', 'teclado', 'são', 'bastante', 'leves', '.']
+
+[2] SEM ARTIGOS (77 tokens):
+['caixa', 'chegou', 'em', 'mau', 'estado', ',', 'mas', 'produto', 'está', 'em', 'boas', 'condições', '.', 'funciona', 'perfeitamente', ',', 'emitindo', 'som', 'muito', 'suave', 'ao', 'usar', 'teclas', '.', 'não', 'fica', 'muito', 'firme', ';', 'balança', 'pouco', '.', 'tem', 'pernas', 'extras', 'para', 'elevá-lo', ',', 'mas', ',', 'mesmo', 'assim', ',', 'conjunto', 'não', 'se', 'mantém', 'estável', '.', 'luzes', 'iluminam', 'muito', 'bem', 'e', 'é', 'muito', 'confortável', 'de', 'usar', ';', 'teclas', 'podem', 'ser', 'removidas', 'sem', 'muita', 'dificuldade', ',', 'e', 'tanto', 'mouse', 'quanto', 'teclado', 'são', 'bastante', 'leves', '.']
+
+[3] SEM PONTUAÇÃO (64 tokens):
+['caixa', 'chegou', 'em', 'mau', 'estado', 'mas', 'produto', 'está', 'em', 'boas', 'condições', 'funciona', 'perfeitamente', 'emitindo', 'som', 'muito', 'suave', 'ao', 'usar', 'teclas', 'não', 'fica', 'muito', 'firme', 'balança', 'pouco', 'tem', 'pernas', 'extras', 'para', 'elevá-lo', 'mas', 'mesmo', 'assim', 'conjunto', 'não', 'se', 'mantém', 'estável', 'luzes', 'iluminam', 'muito', 'bem', 'e', 'é', 'muito', 'confortável', 'de', 'usar', 'teclas', 'podem', 'ser', 'removidas', 'sem', 'muita', 'dificuldade', 'e', 'tanto', 'mouse', 'quanto', 'teclado', 'são', 'bastante', 'leves']
+
+[4] SEM NÚMEROS (64 tokens):
+['caixa', 'chegou', 'em', 'mau', 'estado', 'mas', 'produto', 'está', 'em', 'boas', 'condições', 'funciona', 'perfeitamente', 'emitindo', 'som', 'muito', 'suave', 'ao', 'usar', 'teclas', 'não', 'fica', 'muito', 'firme', 'balança', 'pouco', 'tem', 'pernas', 'extras', 'para', 'elevá-lo', 'mas', 'mesmo', 'assim', 'conjunto', 'não', 'se', 'mantém', 'estável', 'luzes', 'iluminam', 'muito', 'bem', 'e', 'é', 'muito', 'confortável', 'de', 'usar', 'teclas', 'podem', 'ser', 'removidas', 'sem', 'muita', 'dificuldade', 'e', 'tanto', 'mouse', 'quanto', 'teclado', 'são', 'bastante', 'leves']
+
+[5] SEM STOPWORDS (41 tokens):
+['caixa', 'chegou', 'mau', 'estado', 'produto', 'boas', 'condições', 'funciona', 'perfeitamente', 'emitindo', 'som', 'suave', 'usar', 'teclas', 'fica', 'firme', 'balança', 'pouco', 'pernas', 'extras', 'elevá-lo', 'assim', 'conjunto', 'mantém', 'estável', 'luzes', 'iluminam', 'bem', 'confortável', 'usar', 'teclas', 'podem', 'removidas', 'muita', 'dificuldade', 'tanto', 'mouse', 'quanto', 'teclado', 'bastante', 'leves']
+
+[6] LEMATIZAÇÃO (41 tokens):
+['caixa', 'chegou', 'mau', 'estado', 'produto', 'boa', 'condições', 'funciona', 'perfeitamente', 'emitindo', 'som', 'suave', 'usar', 'teclas', 'fica', 'firme', 'balança', 'pouco', 'pernas', 'extra', 'elevá-lo', 'assim', 'conjunto', 'mantém', 'estável', 'luzes', 'iluminam', 'bem', 'confortável', 'usar', 'teclas', 'podem', 'removidas', 'muita', 'dificuldade', 'tanto', 'mouse', 'quanto', 'teclado', 'bastante', 'leves']
+
+[7] POS TAGGING:
+[('caixa', 'NN'), ('chegou', 'NN'), ('mau', 'NN'), ('estado', 'JJ'), ('produto', 'NN'), ('boa', 'NN'), ('condições', 'NN'), ('funciona', 'NN'), ('perfeitamente', 'NN'), ('emitindo', 'FW'), ('som', 'NN'), ('suave', 'VBP'), ('usar', 'JJ'), ('teclas', 'NNS'), ('fica', 'VBP'), ('firme', 'JJ'), ('balança', 'NN'), ('pouco', 'NN'), ('pernas', 'JJ'), ('extra', 'JJ'), ('elevá-lo', 'JJ'), ('assim', 'NN'), ('conjunto', 'NN'), ('mantém', 'NN'), ('estável', 'NN'), ('luzes', 'VBZ'), ('iluminam', 'JJ'), ('bem', 'NN'), ('confortável', 'NN'), ('usar', 'JJ'), ('teclas', 'NNS'), ('podem', 'VBP'), ('removidas', 'JJ'), ('muita', 'NN'), ('dificuldade', 'NN'), ('tanto', 'NN'), ('mouse', 'NN'), ('quanto', 'NN'), ('teclado', 'NN'), ('bastante', 'NN'), ('leves', 'NNS')]
+
+[8] RADICALIZAÇÃO / STEMMING (41 tokens):
+['caix', 'cheg', 'mau', 'est', 'produt', 'boa', 'cond', 'func', 'perfeit', 'emit', 'som', 'suav', 'us', 'tecl', 'fic', 'firm', 'balanç', 'pouc', 'pern', 'extr', 'elevá-l', 'assim', 'conjunt', 'mantém', 'est', 'luz', 'ilumin', 'bem', 'confort', 'us', 'tecl', 'pod', 'remov', 'muit', 'dificuldad', 'tant', 'mous', 'quant', 'tecl', 'bast', 'lev']
+
+--------------------------------------------------------------------------------
+AVALIAÇÃO 7
+--------------------------------------------------------------------------------
+TEXTO ORIGINAL:
+"Um teclado muito funcional. Uma boa alternativa aos teclados gamer mais caros 
+disponíveis no mercado. Infelizmente, possui apenas 2 modos de iluminação RGB 
+(estacionário e piscando lentamente), sem efeito de respiração ou algo equivalente."
+
+[1] TOKENIZAÇÃO (41 tokens):
+['um', 'teclado', 'muito', 'funcional', '.', 'uma', 'boa', 'alternativa', 'aos', 'teclados', 'gamer', 'mais', 'caros', 'disponíveis', 'no', 'mercado', '.', 'infelizmente', ',', 'possui', 'apenas', '2', 'modos', 'de', 'iluminação', 'rgb', '(', 'estacionário', 'e', 'piscando', 'lentamente', ')', ',', 'sem', 'efeito', 'de', 'respiração', 'ou', 'algo', 'equivalente', '.']
+
+[2] SEM ARTIGOS (39 tokens):
+['teclado', 'muito', 'funcional', '.', 'boa', 'alternativa', 'aos', 'teclados', 'gamer', 'mais', 'caros', 'disponíveis', 'no', 'mercado', '.', 'infelizmente', ',', 'possui', 'apenas', '2', 'modos', 'de', 'iluminação', 'rgb', '(', 'estacionário', 'e', 'piscando', 'lentamente', ')', ',', 'sem', 'efeito', 'de', 'respiração', 'ou', 'algo', 'equivalente', '.']
+
+[3] SEM PONTUAÇÃO (32 tokens):
+['teclado', 'muito', 'funcional', 'boa', 'alternativa', 'aos', 'teclados', 'gamer', 'mais', 'caros', 'disponíveis', 'no', 'mercado', 'infelizmente', 'possui', 'apenas', '2', 'modos', 'de', 'iluminação', 'rgb', 'estacionário', 'e', 'piscando', 'lentamente', 'sem', 'efeito', 'de', 'respiração', 'ou', 'algo', 'equivalente']
+
+[4] SEM NÚMEROS (31 tokens):
+['teclado', 'muito', 'funcional', 'boa', 'alternativa', 'aos', 'teclados', 'gamer', 'mais', 'caros', 'disponíveis', 'no', 'mercado', 'infelizmente', 'possui', 'apenas', 'modos', 'de', 'iluminação', 'rgb', 'estacionário', 'e', 'piscando', 'lentamente', 'sem', 'efeito', 'de', 'respiração', 'ou', 'algo', 'equivalente']
+
+[5] SEM STOPWORDS (22 tokens):
+['teclado', 'funcional', 'boa', 'alternativa', 'teclados', 'gamer', 'caros', 'disponíveis', 'mercado', 'infelizmente', 'possui', 'apenas', 'modos', 'iluminação', 'rgb', 'estacionário', 'piscando', 'lentamente', 'efeito', 'respiração', 'algo', 'equivalente']
+
+[6] LEMATIZAÇÃO (22 tokens):
+['teclado', 'funcional', 'boa', 'alternativa', 'teclados', 'gamer', 'caros', 'disponíveis', 'mercado', 'infelizmente', 'possui', 'apenas', 'modos', 'iluminação', 'rgb', 'estacionário', 'piscando', 'lentamente', 'efeito', 'respiração', 'algo', 'equivalente']
+
+[7] POS TAGGING:
+[('teclado', 'JJ'), ('funcional', 'JJ'), ('boa', 'NN'), ('alternativa', 'NN'), ('teclados', 'NN'), ('gamer', 'NN'), ('caros', 'NNS'), ('disponíveis', 'VBP'), ('mercado', 'JJ'), ('infelizmente', 'NN'), ('possui', 'NN'), ('apenas', 'IN'), ('modos', 'NN'), ('iluminação', 'NN'), ('rgb', 'NN'), ('estacionário', 'NN'), ('piscando', 'NN'), ('lentamente', 'NN'), ('efeito', 'FW'), ('respiração', 'NN'), ('algo', 'NN'), ('equivalente', 'NN')]
+
+[8] RADICALIZAÇÃO / STEMMING (22 tokens):
+['tecl', 'func', 'boa', 'altern', 'tecl', 'gam', 'car', 'dispon', 'merc', 'infeliz', 'possu', 'apen', 'mod', 'ilumin', 'rgb', 'estacion', 'pisc', 'lent', 'efeit', 'respir', 'alg', 'equival']
+
+--------------------------------------------------------------------------------
+AVALIAÇÃO 8
+--------------------------------------------------------------------------------
+TEXTO ORIGINAL:
+"Um teclado e mouse muito legais. Qualidade média, mas para o uso que vamos dar, 
+é suficiente ou mais do que suficiente. Mas eu realmente gostei disso."
+
+[1] TOKENIZAÇÃO (32 tokens):
+['um', 'teclado', 'e', 'mouse', 'muito', 'legais', '.', 'qualidade', 'média', ',', 'mas', 'para', 'o', 'uso', 'que', 'vamos', 'dar', ',', 'é', 'suficiente', 'ou', 'mais', 'do', 'que', 'suficiente', '.', 'mas', 'eu', 'realmente', 'gostei', 'disso', '.']
+
+[2] SEM ARTIGOS (30 tokens):
+['teclado', 'e', 'mouse', 'muito', 'legais', '.', 'qualidade', 'média', ',', 'mas', 'para', 'uso', 'que', 'vamos', 'dar', ',', 'é', 'suficiente', 'ou', 'mais', 'do', 'que', 'suficiente', '.', 'mas', 'eu', 'realmente', 'gostei', 'disso', '.']
+
+[3] SEM PONTUAÇÃO (25 tokens):
+['teclado', 'e', 'mouse', 'muito', 'legais', 'qualidade', 'média', 'mas', 'para', 'uso', 'que', 'vamos', 'dar', 'é', 'suficiente', 'ou', 'mais', 'do', 'que', 'suficiente', 'mas', 'eu', 'realmente', 'gostei', 'disso']
+
+[4] SEM NÚMEROS (25 tokens):
+['teclado', 'e', 'mouse', 'muito', 'legais', 'qualidade', 'média', 'mas', 'para', 'uso', 'que', 'vamos', 'dar', 'é', 'suficiente', 'ou', 'mais', 'do', 'que', 'suficiente', 'mas', 'eu', 'realmente', 'gostei', 'disso']
+
+[5] SEM STOPWORDS (13 tokens):
+['teclado', 'mouse', 'legais', 'qualidade', 'média', 'uso', 'vamos', 'dar', 'suficiente', 'suficiente', 'realmente', 'gostei', 'disso']
+
+[6] LEMATIZAÇÃO (13 tokens):
+['teclado', 'mouse', 'legais', 'qualidade', 'média', 'uso', 'vamos', 'dar', 'suficiente', 'suficiente', 'realmente', 'gostei', 'disso']
+
+[7] POS TAGGING:
+[('teclado', 'NN'), ('mouse', 'NN'), ('legais', 'NN'), ('qualidade', 'VBD'), ('média', 'NNP'), ('uso', 'JJ'), ('vamos', 'NN'), ('dar', 'NN'), ('suficiente', 'NN'), ('suficiente', 'NN'), ('realmente', 'NN'), ('gostei', 'NN'), ('disso', 'NN')]
+
+[8] RADICALIZAÇÃO / STEMMING (13 tokens):
+['tecl', 'mous', 'legal', 'qual', 'méd', 'uso', 'vam', 'dar', 'sufici', 'sufici', 'real', 'gost', 'diss']
+
+--------------------------------------------------------------------------------
+AVALIAÇÃO 9
+--------------------------------------------------------------------------------
+TEXTO ORIGINAL:
+"Este teclado é uma verdadeira joia, que beleza, e acima de tudo, é excelente para 
+jogos. Altamente recomendado pela relação custo-benefício, 8/10."
+
+[1] TOKENIZAÇÃO (28 tokens):
+['este', 'teclado', 'é', 'uma', 'verdadeira', 'joia', ',', 'que', 'beleza', ',', 'e', 'acima', 'de', 'tudo', ',', 'é', 'excelente', 'para', 'jogos', '.', 'altamente', 'recomendado', 'pela', 'relação', 'custo-benefício', ',', '8/10', '.']
+
+[2] SEM ARTIGOS (27 tokens):
+['este', 'teclado', 'é', 'verdadeira', 'joia', ',', 'que', 'beleza', ',', 'e', 'acima', 'de', 'tudo', ',', 'é', 'excelente', 'para', 'jogos', '.', 'altamente', 'recomendado', 'pela', 'relação', 'custo-benefício', ',', '8/10', '.']
+
+[3] SEM PONTUAÇÃO (21 tokens):
+['este', 'teclado', 'é', 'verdadeira', 'joia', 'que', 'beleza', 'e', 'acima', 'de', 'tudo', 'é', 'excelente', 'para', 'jogos', 'altamente', 'recomendado', 'pela', 'relação', 'custo-benefício', '8/10']
+
+[4] SEM NÚMEROS (21 tokens):
+['este', 'teclado', 'é', 'verdadeira', 'joia', 'que', 'beleza', 'e', 'acima', 'de', 'tudo', 'é', 'excelente', 'para', 'jogos', 'altamente', 'recomendado', 'pela', 'relação', 'custo-benefício', '8/10']
+
+[5] SEM STOPWORDS (13 tokens):
+['teclado', 'verdadeira', 'joia', 'beleza', 'acima', 'tudo', 'excelente', 'jogos', 'altamente', 'recomendado', 'relação', 'custo-benefício', '8/10']
+
+[6] LEMATIZAÇÃO (13 tokens):
+['teclado', 'verdadeira', 'joia', 'beleza', 'acima', 'tudo', 'excelente', 'jogos', 'altamente', 'recomendado', 'relação', 'custo-benefício', '8/10']
+
+[7] POS TAGGING:
+[('teclado', 'NN'), ('verdadeira', 'NN'), ('joia', 'NN'), ('beleza', 'NN'), ('acima', 'NN'), ('tudo', 'NN'), ('excelente', 'NN'), ('jogos', 'NN'), ('altamente', 'NN'), ('recomendado', 'NN'), ('relação', 'VBD'), ('custo-benefício', 'JJ'), ('8/10', 'CD')]
+
+[8] RADICALIZAÇÃO / STEMMING (13 tokens):
+['tecl', 'verd', 'joi', 'bel', 'acim', 'tud', 'excel', 'jog', 'alt', 'recomend', 'relaç', 'custo-benefíci', '8/10']
+
+--------------------------------------------------------------------------------
+AVALIAÇÃO 10
+--------------------------------------------------------------------------------
+TEXTO ORIGINAL:
+"É bom pelo preço, tal como está, mas o material é um pouco fino."
+
+[1] TOKENIZAÇÃO (17 tokens):
+['é', 'bom', 'pelo', 'preço', ',', 'tal', 'como', 'está', ',', 'mas', 'o', 'material', 'é', 'um', 'pouco', 'fino', '.']
+
+[2] SEM ARTIGOS (15 tokens):
+['é', 'bom', 'pelo', 'preço', ',', 'tal', 'como', 'está', ',', 'mas', 'material', 'é', 'pouco', 'fino', '.']
+
+[3] SEM PONTUAÇÃO (12 tokens):
+['é', 'bom', 'pelo', 'preço', 'tal', 'como', 'está', 'mas', 'material', 'é', 'pouco', 'fino']
+
+[4] SEM NÚMEROS (12 tokens):
+['é', 'bom', 'pelo', 'preço', 'tal', 'como', 'está', 'mas', 'material', 'é', 'pouco', 'fino']
+
+[5] SEM STOPWORDS (6 tokens):
+['bom', 'preço', 'tal', 'material', 'pouco', 'fino']
+
+[6] LEMATIZAÇÃO (6 tokens):
+['bom', 'preço', 'tal', 'material', 'pouco', 'fino']
+
+[7] POS TAGGING:
+[('bom', 'NN'), ('preço', 'NN'), ('tal', 'JJ'), ('material', 'NN'), ('pouco', 'NN'), ('fino', 'NN')]
+
+[8] RADICALIZAÇÃO / STEMMING (6 tokens):
+['bom', 'preç', 'tal', 'mater', 'pouc', 'fin']
+
+--------------------------------------------------------------------------------
+AVALIAÇÃO 11
+--------------------------------------------------------------------------------
+TEXTO ORIGINAL:
+"O produto não é ruim pelo preço, mas o envio precisa melhorar. Há pouca proteção, 
+ou seja, nada além de uma caixa dentro de um saco, como mostrado nas imagens. A 
+caixa está amassada."
+
+[1] TOKENIZAÇÃO (41 tokens):
+['o', 'produto', 'não', 'é', 'ruim', 'pelo', 'preço', ',', 'mas', 'o', 'envio', 'precisa', 'melhorar', '.', 'há', 'pouca', 'proteção', ',', 'ou', 'seja', ',', 'nada', 'além', 'de', 'uma', 'caixa', 'dentro', 'de', 'um', 'saco', ',', 'como', 'mostrado', 'nas', 'imagens', '.', 'a', 'caixa', 'está', 'amassada', '.']
+
+[2] SEM ARTIGOS (36 tokens):
+['produto', 'não', 'é', 'ruim', 'pelo', 'preço', ',', 'mas', 'envio', 'precisa', 'melhorar', '.', 'há', 'pouca', 'proteção', ',', 'ou', 'seja', ',', 'nada', 'além', 'de', 'caixa', 'dentro', 'de', 'saco', ',', 'como', 'mostrado', 'nas', 'imagens', '.', 'caixa', 'está', 'amassada', '.']
+
+[3] SEM PONTUAÇÃO (29 tokens):
+['produto', 'não', 'é', 'ruim', 'pelo', 'preço', 'mas', 'envio', 'precisa', 'melhorar', 'há', 'pouca', 'proteção', 'ou', 'seja', 'nada', 'além', 'de', 'caixa', 'dentro', 'de', 'saco', 'como', 'mostrado', 'nas', 'imagens', 'caixa', 'está', 'amassada']
+
+[4] SEM NÚMEROS (29 tokens):
+['produto', 'não', 'é', 'ruim', 'pelo', 'preço', 'mas', 'envio', 'precisa', 'melhorar', 'há', 'pouca', 'proteção', 'ou', 'seja', 'nada', 'além', 'de', 'caixa', 'dentro', 'de', 'saco', 'como', 'mostrado', 'nas', 'imagens', 'caixa', 'está', 'amassada']
+
+[5] SEM STOPWORDS (17 tokens):
+['produto', 'ruim', 'preço', 'envio', 'precisa', 'melhorar', 'pouca', 'proteção', 'nada', 'além', 'caixa', 'dentro', 'saco', 'mostrado', 'imagens', 'caixa', 'amassada']
+
+[6] LEMATIZAÇÃO (17 tokens):
+['produto', 'ruim', 'preço', 'envio', 'precisa', 'melhorar', 'pouca', 'proteção', 'nada', 'além', 'caixa', 'dentro', 'saco', 'mostrado', 'imagens', 'caixa', 'amassada']
+
+[7] POS TAGGING:
+[('produto', 'NN'), ('ruim', 'NN'), ('preço', 'NN'), ('envio', 'NN'), ('precisa', 'NN'), ('melhorar', 'NN'), ('pouca', 'NN'), ('proteção', 'NN'), ('nada', 'JJ'), ('além', 'NN'), ('caixa', 'NN'), ('dentro', 'NN'), ('saco', 'NN'), ('mostrado', 'NN'), ('imagens', 'VBZ'), ('caixa', 'VBP'), ('amassada', 'NN')]
+
+[8] RADICALIZAÇÃO / STEMMING (17 tokens):
+['produt', 'ruim', 'preç', 'envi', 'precis', 'melhor', 'pouc', 'proteç', 'nad', 'além', 'caix', 'dentr', 'sac', 'mostr', 'imag', 'caix', 'amass']
+
+--------------------------------------------------------------------------------
+AVALIAÇÃO 12
+--------------------------------------------------------------------------------
+TEXTO ORIGINAL:
+"O teclado não é nada ruim. Pelo preço que pagamos, seria ótimo se as teclas fossem 
+iluminadas em vez de apenas a caixa, mas, no geral, está tudo bem. Pelo preço, é 
+perfeito, não tenho do que reclamar."
+
+[1] TOKENIZAÇÃO (47 tokens):
+['o', 'teclado', 'não', 'é', 'nada', 'ruim', '.', 'pelo', 'preço', 'que', 'pagamos', ',', 'seria', 'ótimo', 'se', 'as', 'teclas', 'fossem', 'iluminadas', 'em', 'vez', 'de', 'apenas', 'a', 'caixa', ',', 'mas', ',', 'no', 'geral', ',', 'está', 'tudo', 'bem', '.', 'pelo', 'preço', ',', 'é', 'perfeito', ',', 'não', 'tenho', 'do', 'que', 'reclamar', '.']
+
+[2] SEM ARTIGOS (44 tokens):
+['teclado', 'não', 'é', 'nada', 'ruim', '.', 'pelo', 'preço', 'que', 'pagamos', ',', 'seria', 'ótimo', 'se', 'teclas', 'fossem', 'iluminadas', 'em', 'vez', 'de', 'apenas', 'caixa', ',', 'mas', ',', 'no', 'geral', ',', 'está', 'tudo', 'bem', '.', 'pelo', 'preço', ',', 'é', 'perfeito', ',', 'não', 'tenho', 'do', 'que', 'reclamar', '.']
+
+[3] SEM PONTUAÇÃO (35 tokens):
+['teclado', 'não', 'é', 'nada', 'ruim', 'pelo', 'preço', 'que', 'pagamos', 'seria', 'ótimo', 'se', 'teclas', 'fossem', 'iluminadas', 'em', 'vez', 'de', 'apenas', 'caixa', 'mas', 'no', 'geral', 'está', 'tudo', 'bem', 'pelo', 'preço', 'é', 'perfeito', 'não', 'tenho', 'do', 'que', 'reclamar']
+
+[4] SEM NÚMEROS (35 tokens):
+['teclado', 'não', 'é', 'nada', 'ruim', 'pelo', 'preço', 'que', 'pagamos', 'seria', 'ótimo', 'se', 'teclas', 'fossem', 'iluminadas', 'em', 'vez', 'de', 'apenas', 'caixa', 'mas', 'no', 'geral', 'está', 'tudo', 'bem', 'pelo', 'preço', 'é', 'perfeito', 'não', 'tenho', 'do', 'que', 'reclamar']
+
+[5] SEM STOPWORDS (17 tokens):
+['teclado', 'nada', 'ruim', 'preço', 'pagamos', 'ótimo', 'teclas', 'iluminadas', 'vez', 'apenas', 'caixa', 'geral', 'tudo', 'bem', 'preço', 'perfeito', 'reclamar']
+
+[6] LEMATIZAÇÃO (17 tokens):
+['teclado', 'nada', 'ruim', 'preço', 'pagamos', 'ótimo', 'teclas', 'iluminadas', 'vez', 'apenas', 'caixa', 'geral', 'tudo', 'bem', 'preço', 'perfeito', 'reclamar']
+
+[7] POS TAGGING:
+[('teclado', 'NN'), ('nada', 'CC'), ('ruim', 'NN'), ('preço', 'NN'), ('pagamos', 'NN'), ('ótimo', 'NNP'), ('teclas', 'NN'), ('iluminadas', 'NN'), ('vez', 'NN'), ('apenas', 'NNS'), ('caixa', 'VBP'), ('geral', 'JJ'), ('tudo', 'NN'), ('bem', 'NN'), ('preço', 'NN'), ('perfeito', 'NN'), ('reclamar', 'NN')]
+
+[8] RADICALIZAÇÃO / STEMMING (17 tokens):
+['tecl', 'nad', 'ruim', 'preç', 'pag', 'ótim', 'tecl', 'ilumin', 'vez', 'apen', 'caix', 'geral', 'tud', 'bem', 'preç', 'perfeit', 'reclam']
+
+--------------------------------------------------------------------------------
+AVALIAÇÃO 13
+--------------------------------------------------------------------------------
+TEXTO ORIGINAL:
+"O produto chegou em uma caixa amassada. O mouse está quebrado em algumas 
+partes. Além disso, parece que já havia sido colocado lá, pois não foram encontrados 
+fragmentos ou peças do mouse dentro da caixa."
+
+[1] TOKENIZAÇÃO (40 tokens):
+['o', 'produto', 'chegou', 'em', 'uma', 'caixa', 'amassada', '.', 'o', 'mouse', 'está', 'quebrado', 'em', 'algumas', 'partes', '.', 'além', 'disso', ',', 'parece', 'que', 'já', 'havia', 'sido', 'colocado', 'lá', ',', 'pois', 'não', 'foram', 'encontrados', 'fragmentos', 'ou', 'peças', 'do', 'mouse', 'dentro', 'da', 'caixa', '.']
+
+[2] SEM ARTIGOS (37 tokens):
+['produto', 'chegou', 'em', 'caixa', 'amassada', '.', 'mouse', 'está', 'quebrado', 'em', 'algumas', 'partes', '.', 'além', 'disso', ',', 'parece', 'que', 'já', 'havia', 'sido', 'colocado', 'lá', ',', 'pois', 'não', 'foram', 'encontrados', 'fragmentos', 'ou', 'peças', 'do', 'mouse', 'dentro', 'da', 'caixa', '.']
+
+[3] SEM PONTUAÇÃO (32 tokens):
+['produto', 'chegou', 'em', 'caixa', 'amassada', 'mouse', 'está', 'quebrado', 'em', 'algumas', 'partes', 'além', 'disso', 'parece', 'que', 'já', 'havia', 'sido', 'colocado', 'lá', 'pois', 'não', 'foram', 'encontrados', 'fragmentos', 'ou', 'peças', 'do', 'mouse', 'dentro', 'da', 'caixa']
+
+[4] SEM NÚMEROS (32 tokens):
+['produto', 'chegou', 'em', 'caixa', 'amassada', 'mouse', 'está', 'quebrado', 'em', 'algumas', 'partes', 'além', 'disso', 'parece', 'que', 'já', 'havia', 'sido', 'colocado', 'lá', 'pois', 'não', 'foram', 'encontrados', 'fragmentos', 'ou', 'peças', 'do', 'mouse', 'dentro', 'da', 'caixa']
+
+[5] SEM STOPWORDS (22 tokens):
+['produto', 'chegou', 'caixa', 'amassada', 'mouse', 'quebrado', 'algumas', 'partes', 'além', 'disso', 'parece', 'havia', 'sido', 'colocado', 'lá', 'pois', 'encontrados', 'fragmentos', 'peças', 'mouse', 'dentro', 'caixa']
+
+[6] LEMATIZAÇÃO (22 tokens):
+['produto', 'chegou', 'caixa', 'amassada', 'mouse', 'quebrado', 'algumas', 'partes', 'além', 'disso', 'parece', 'havia', 'sido', 'colocado', 'lá', 'poi', 'encontrados', 'fragmentos', 'peças', 'mouse', 'dentro', 'caixa']
+
+[7] POS TAGGING:
+[('produto', 'NN'), ('chegou', 'NN'), ('caixa', 'NN'), ('amassada', 'NN'), ('mouse', 'NN'), ('quebrado', 'NN'), ('algumas', 'NN'), ('partes', 'VBZ'), ('além', 'JJ'), ('disso', 'NNS'), ('parece', 'VBP'), ('havia', 'JJ'), ('sido', 'NN'), ('colocado', 'NN'), ('lá', 'NN'), ('poi', 'NN'), ('encontrados', 'NN'), ('fragmentos', 'NN'), ('peças', 'NN'), ('mouse', 'NN'), ('dentro', 'NN'), ('caixa', 'NN')]
+
+[8] RADICALIZAÇÃO / STEMMING (22 tokens):
+['produt', 'cheg', 'caix', 'amass', 'mous', 'quebr', 'algum', 'part', 'além', 'diss', 'parec', 'hav', 'sid', 'coloc', 'lá', 'poi', 'encontr', 'fragment', 'peç', 'mous', 'dentr', 'caix']
+
+--------------------------------------------------------------------------------
+AVALIAÇÃO 14
+--------------------------------------------------------------------------------
+TEXTO ORIGINAL:
+"O teclado é muito bom para começar, mas devido à qualidade do plástico barato, 
+não é recomendado se você planeja usá-lo por um longo período. Mas, fora isso, 
+é muito bom e se ajusta muito bem."
+
+[1] TOKENIZAÇÃO (42 tokens):
+['o', 'teclado', 'é', 'muito', 'bom', 'para', 'começar', ',', 'mas', 'devido', 'à', 'qualidade', 'do', 'plástico', 'barato', ',', 'não', 'é', 'recomendado', 'se', 'você', 'planeja', 'usá-lo', 'por', 'um', 'longo', 'período', '.', 'mas', ',', 'fora', 'isso', ',', 'é', 'muito', 'bom', 'e', 'se', 'ajusta', 'muito', 'bem', '.']
+
+[2] SEM ARTIGOS (40 tokens):
+['teclado', 'é', 'muito', 'bom', 'para', 'começar', ',', 'mas', 'devido', 'à', 'qualidade', 'do', 'plástico', 'barato', ',', 'não', 'é', 'recomendado', 'se', 'você', 'planeja', 'usá-lo', 'por', 'longo', 'período', '.', 'mas', ',', 'fora', 'isso', ',', 'é', 'muito', 'bom', 'e', 'se', 'ajusta', 'muito', 'bem', '.']
+
+[3] SEM PONTUAÇÃO (34 tokens):
+['teclado', 'é', 'muito', 'bom', 'para', 'começar', 'mas', 'devido', 'à', 'qualidade', 'do', 'plástico', 'barato', 'não', 'é', 'recomendado', 'se', 'você', 'planeja', 'usá-lo', 'por', 'longo', 'período', 'mas', 'fora', 'isso', 'é', 'muito', 'bom', 'e', 'se', 'ajusta', 'muito', 'bem']
+
+[4] SEM NÚMEROS (34 tokens):
+['teclado', 'é', 'muito', 'bom', 'para', 'começar', 'mas', 'devido', 'à', 'qualidade', 'do', 'plástico', 'barato', 'não', 'é', 'recomendado', 'se', 'você', 'planeja', 'usá-lo', 'por', 'longo', 'período', 'mas', 'fora', 'isso', 'é', 'muito', 'bom', 'e', 'se', 'ajusta', 'muito', 'bem']
+
+[5] SEM STOPWORDS (15 tokens):
+['teclado', 'bom', 'começar', 'devido', 'qualidade', 'plástico', 'barato', 'recomendado', 'planeja', 'usá-lo', 'longo', 'período', 'bom', 'ajusta', 'bem']
+
+[6] LEMATIZAÇÃO (15 tokens):
+['teclado', 'bom', 'começar', 'devido', 'qualidade', 'plástico', 'barato', 'recomendado', 'planeja', 'usá-lo', 'longo', 'período', 'bom', 'ajusta', 'bem']
+
+[7] POS TAGGING:
+[('teclado', 'NN'), ('bom', 'NN'), ('começar', 'NN'), ('devido', 'NN'), ('qualidade', 'VBD'), ('plástico', 'NN'), ('barato', 'NN'), ('recomendado', 'NN'), ('planeja', 'NN'), ('usá-lo', 'JJ'), ('longo', 'NN'), ('período', 'NN'), ('bom', 'NN'), ('ajusta', 'NN'), ('bem', 'NN')]
+
+[8] RADICALIZAÇÃO / STEMMING (15 tokens):
+['tecl', 'bom', 'começ', 'dev', 'qual', 'plás', 'barat', 'recomend', 'planej', 'usá-l', 'long', 'períod', 'bom', 'ajust', 'bem']
+
+--------------------------------------------------------------------------------
+AVALIAÇÃO 15
+--------------------------------------------------------------------------------
+TEXTO ORIGINAL:
+"Dou 3 estrelas, não porque seja um produto ruim em si, mas porque os materiais de 
+fabricação são realmente baratos. Se você está com uma situação financeira difícil, 
+não tenha receio de comprá-lo; se puder economizar no curto prazo, procure uma 
+opção de maior qualidade."
+
+[1] TOKENIZAÇÃO (52 tokens):
+['dou', '3', 'estrelas', ',', 'não', 'porque', 'seja', 'um', 'produto', 'ruim', 'em', 'si', ',', 'mas', 'porque', 'os', 'materiais', 'de', 'fabricação', 'são', 'realmente', 'baratos', '.', 'se', 'você', 'está', 'com', 'uma', 'situação', 'financeira', 'difícil', ',', 'não', 'tenha', 'receio', 'de', 'comprá-lo', ';', 'se', 'puder', 'economizar', 'no', 'curto', 'prazo', ',', 'procure', 'uma', 'opção', 'de', 'maior', 'qualidade', '.']
+
+[2] SEM ARTIGOS (48 tokens):
+['dou', '3', 'estrelas', ',', 'não', 'porque', 'seja', 'produto', 'ruim', 'em', 'si', ',', 'mas', 'porque', 'materiais', 'de', 'fabricação', 'são', 'realmente', 'baratos', '.', 'se', 'você', 'está', 'com', 'situação', 'financeira', 'difícil', ',', 'não', 'tenha', 'receio', 'de', 'comprá-lo', ';', 'se', 'puder', 'economizar', 'no', 'curto', 'prazo', ',', 'procure', 'opção', 'de', 'maior', 'qualidade', '.']
+
+[3] SEM PONTUAÇÃO (41 tokens):
+['dou', '3', 'estrelas', 'não', 'porque', 'seja', 'produto', 'ruim', 'em', 'si', 'mas', 'porque', 'materiais', 'de', 'fabricação', 'são', 'realmente', 'baratos', 'se', 'você', 'está', 'com', 'situação', 'financeira', 'difícil', 'não', 'tenha', 'receio', 'de', 'comprá-lo', 'se', 'puder', 'economizar', 'no', 'curto', 'prazo', 'procure', 'opção', 'de', 'maior', 'qualidade']
+
+[4] SEM NÚMEROS (40 tokens):
+['dou', 'estrelas', 'não', 'porque', 'seja', 'produto', 'ruim', 'em', 'si', 'mas', 'porque', 'materiais', 'de', 'fabricação', 'são', 'realmente', 'baratos', 'se', 'você', 'está', 'com', 'situação', 'financeira', 'difícil', 'não', 'tenha', 'receio', 'de', 'comprá-lo', 'se', 'puder', 'economizar', 'no', 'curto', 'prazo', 'procure', 'opção', 'de', 'maior', 'qualidade']
+
+[5] SEM STOPWORDS (24 tokens):
+['dou', 'estrelas', 'porque', 'produto', 'ruim', 'si', 'porque', 'materiais', 'fabricação', 'realmente', 'baratos', 'situação', 'financeira', 'difícil', 'receio', 'comprá-lo', 'puder', 'economizar', 'curto', 'prazo', 'procure', 'opção', 'maior', 'qualidade']
+
+[6] LEMATIZAÇÃO (24 tokens):
+['dou', 'estrelas', 'porque', 'produto', 'ruim', 'si', 'porque', 'materiais', 'fabricação', 'realmente', 'baratos', 'situação', 'financeira', 'difícil', 'receio', 'comprá-lo', 'puder', 'economizar', 'curto', 'prazo', 'procure', 'opção', 'maior', 'qualidade']
+
+[7] POS TAGGING:
+[('dou', 'NN'), ('estrelas', 'NNS'), ('porque', 'JJ'), ('produto', 'NN'), ('ruim', 'NN'), ('si', 'NN'), ('porque', 'NN'), ('materiais', 'NN'), ('fabricação', 'NN'), ('realmente', 'NN'), ('baratos', 'NN'), ('situação', 'NN'), ('financeira', 'NN'), ('difícil', 'NN'), ('receio', 'VBD'), ('comprá-lo', 'JJ'), ('puder', 'NN'), ('economizar', 'NN'), ('curto', 'NN'), ('prazo', 'NN'), ('procure', 'NN'), ('opção', 'VBZ'), ('maior', 'JJ'), ('qualidade', 'NN')]
+
+[8] RADICALIZAÇÃO / STEMMING (24 tokens):
+['dou', 'estrel', 'porqu', 'produt', 'ruim', 'si', 'porqu', 'mater', 'fabric', 'real', 'barat', 'situ', 'financ', 'difícil', 'recei', 'comprá-l', 'pud', 'econom', 'curt', 'praz', 'procur', 'opç', 'mai', 'qual']
+
+--------------------------------------------------------------------------------
+AVALIAÇÃO 16
+--------------------------------------------------------------------------------
+TEXTO ORIGINAL:
+"trava da tecla esc quebrada e o trocador de dpi está quebrado, caixa amassada"
+
+[1] TOKENIZAÇÃO (15 tokens):
+['trava', 'da', 'tecla', 'esc', 'quebrada', 'e', 'o', 'trocador', 'de', 'dpi', 'está', 'quebrado', ',', 'caixa', 'amassada']
+
+[2] SEM ARTIGOS (14 tokens):
+['trava', 'da', 'tecla', 'esc', 'quebrada', 'e', 'trocador', 'de', 'dpi', 'está', 'quebrado', ',', 'caixa', 'amassada']
+
+[3] SEM PONTUAÇÃO (13 tokens):
+['trava', 'da', 'tecla', 'esc', 'quebrada', 'e', 'trocador', 'de', 'dpi', 'está', 'quebrado', 'caixa', 'amassada']
+
+[4] SEM NÚMEROS (13 tokens):
+['trava', 'da', 'tecla', 'esc', 'quebrada', 'e', 'trocador', 'de', 'dpi', 'está', 'quebrado', 'caixa', 'amassada']
+
+[5] SEM STOPWORDS (9 tokens):
+['trava', 'tecla', 'esc', 'quebrada', 'trocador', 'dpi', 'quebrado', 'caixa', 'amassada']
+
+[6] LEMATIZAÇÃO (9 tokens):
+['trava', 'tecla', 'esc', 'quebrada', 'trocador', 'dpi', 'quebrado', 'caixa', 'amassada']
+
+[7] POS TAGGING:
+[('trava', 'NN'), ('tecla', 'NN'), ('esc', 'VBP'), ('quebrada', 'JJ'), ('trocador', 'NN'), ('dpi', 'NN'), ('quebrado', 'NN'), ('caixa', 'NN'), ('amassada', 'NN')]
+
+[8] RADICALIZAÇÃO / STEMMING (9 tokens):
+['tr', 'tecl', 'esc', 'quebr', 'troc', 'dpi', 'quebr', 'caix', 'amass']
+
+--------------------------------------------------------------------------------
+AVALIAÇÃO 17
+--------------------------------------------------------------------------------
+TEXTO ORIGINAL:
+"A velocidade de resposta das teclas é terrível, e depois de alguns usos, todas as 
+teclas se soltam. A estrutura parece ter sido impressa em 3D. É mal feita. Se vocês 
+já vão fazer algo tão mal, não vendam, seus malditos idiotas."
+
+[1] TOKENIZAÇÃO (50 tokens):
+['a', 'velocidade', 'de', 'resposta', 'das', 'teclas', 'é', 'terrível', ',', 'e', 'depois', 'de', 'alguns', 'usos', ',', 'todas', 'as', 'teclas', 'se', 'soltam', '.', 'a', 'estrutura', 'parece', 'ter', 'sido', 'impressa', 'em', '3d', '.', 'é', 'mal', 'feita', '.', 'se', 'vocês', 'já', 'vão', 'fazer', 'algo', 'tão', 'mal', ',', 'não', 'vendam', ',', 'seus', 'malditos', 'idiotas', '.']
+
+[2] SEM ARTIGOS (47 tokens):
+['velocidade', 'de', 'resposta', 'das', 'teclas', 'é', 'terrível', ',', 'e', 'depois', 'de', 'alguns', 'usos', ',', 'todas', 'teclas', 'se', 'soltam', '.', 'estrutura', 'parece', 'ter', 'sido', 'impressa', 'em', '3d', '.', 'é', 'mal', 'feita', '.', 'se', 'vocês', 'já', 'vão', 'fazer', 'algo', 'tão', 'mal', ',', 'não', 'vendam', ',', 'seus', 'malditos', 'idiotas', '.']
+
+[3] SEM PONTUAÇÃO (39 tokens):
+['velocidade', 'de', 'resposta', 'das', 'teclas', 'é', 'terrível', 'e', 'depois', 'de', 'alguns', 'usos', 'todas', 'teclas', 'se', 'soltam', 'estrutura', 'parece', 'ter', 'sido', 'impressa', 'em', '3d', 'é', 'mal', 'feita', 'se', 'vocês', 'já', 'vão', 'fazer', 'algo', 'tão', 'mal', 'não', 'vendam', 'seus', 'malditos', 'idiotas']
+
+[4] SEM NÚMEROS (39 tokens):
+['velocidade', 'de', 'resposta', 'das', 'teclas', 'é', 'terrível', 'e', 'depois', 'de', 'alguns', 'usos', 'todas', 'teclas', 'se', 'soltam', 'estrutura', 'parece', 'ter', 'sido', 'impressa', 'em', '3d', 'é', 'mal', 'feita', 'se', 'vocês', 'já', 'vão', 'fazer', 'algo', 'tão', 'mal', 'não', 'vendam', 'seus', 'malditos', 'idiotas']
+
+[5] SEM STOPWORDS (25 tokens):
+['velocidade', 'resposta', 'teclas', 'terrível', 'alguns', 'usos', 'todas', 'teclas', 'soltam', 'estrutura', 'parece', 'ter', 'sido', 'impressa', '3d', 'mal', 'feita', 'vão', 'fazer', 'algo', 'tão', 'mal', 'vendam', 'malditos', 'idiotas']
+
+[6] LEMATIZAÇÃO (25 tokens):
+['velocidade', 'resposta', 'teclas', 'terrível', 'alguns', 'usos', 'toda', 'teclas', 'soltam', 'estrutura', 'parece', 'ter', 'sido', 'impressa', '3d', 'mal', 'feita', 'vão', 'fazer', 'algo', 'tão', 'mal', 'vendam', 'malditos', 'idiotas']
+
+[7] POS TAGGING:
+[('velocidade', 'NN'), ('resposta', 'NN'), ('teclas', 'NNS'), ('terrível', 'VBP'), ('alguns', 'NNS'), ('usos', 'JJ'), ('toda', 'JJ'), ('teclas', 'NNS'), ('soltam', 'VBP'), ('estrutura', 'JJ'), ('parece', 'NN'), ('ter', 'NN'), ('sido', 'NN'), ('impressa', 'NN'), ('3d', 'CD'), ('mal', 'JJ'), ('feita', 'JJ'), ('vão', 'NN'), ('fazer', 'NN'), ('algo', 'JJ'), ('tão', 'NN'), ('mal', 'JJ'), ('vendam', 'NN'), ('malditos', 'NNS'), ('idiotas', 'VBP')]
+
+[8] RADICALIZAÇÃO / STEMMING (25 tokens):
+['veloc', 'respost', 'tecl', 'terr', 'algum', 'uso', 'tod', 'tecl', 'solt', 'estrut', 'parec', 'ter', 'sid', 'impress', '3d', 'mal', 'feit', 'vão', 'faz', 'alg', 'tão', 'mal', 'vend', 'maldit', 'idiot']
+
+--------------------------------------------------------------------------------
+AVALIAÇÃO 18
+--------------------------------------------------------------------------------
+TEXTO ORIGINAL:
+"Embora diga ser mecânico e pareça ser, na verdade é baseado em membrana, e os 
+materiais parecem ser de baixa qualidade."
+
+[1] TOKENIZAÇÃO (24 tokens):
+['embora', 'diga', 'ser', 'mecânico', 'e', 'pareça', 'ser', ',', 'na', 'verdade', 'é', 'baseado', 'em', 'membrana', ',', 'e', 'os', 'materiais', 'parecem', 'ser', 'de', 'baixa', 'qualidade', '.']
+
+[2] SEM ARTIGOS (23 tokens):
+['embora', 'diga', 'ser', 'mecânico', 'e', 'pareça', 'ser', ',', 'na', 'verdade', 'é', 'baseado', 'em', 'membrana', ',', 'e', 'materiais', 'parecem', 'ser', 'de', 'baixa', 'qualidade', '.']
+
+[3] SEM PONTUAÇÃO (20 tokens):
+['embora', 'diga', 'ser', 'mecânico', 'e', 'pareça', 'ser', 'na', 'verdade', 'é', 'baseado', 'em', 'membrana', 'e', 'materiais', 'parecem', 'ser', 'de', 'baixa', 'qualidade']
+
+[4] SEM NÚMEROS (20 tokens):
+['embora', 'diga', 'ser', 'mecânico', 'e', 'pareça', 'ser', 'na', 'verdade', 'é', 'baseado', 'em', 'membrana', 'e', 'materiais', 'parecem', 'ser', 'de', 'baixa', 'qualidade']
+
+[5] SEM STOPWORDS (11 tokens):
+['embora', 'diga', 'mecânico', 'pareça', 'verdade', 'baseado', 'membrana', 'materiais', 'parecem', 'baixa', 'qualidade']
+
+[6] LEMATIZAÇÃO (11 tokens):
+['embora', 'diga', 'mecânico', 'pareça', 'verdade', 'baseado', 'membrana', 'materiais', 'parecem', 'baixa', 'qualidade']
+
+[7] POS TAGGING:
+[('embora', 'NNS'), ('diga', 'VBP'), ('mecânico', 'JJ'), ('pareça', 'NN'), ('verdade', 'NN'), ('baseado', 'NN'), ('membrana', 'NN'), ('materiais', 'NN'), ('parecem', 'NN'), ('baixa', 'NN'), ('qualidade', 'NN')]
+
+[8] RADICALIZAÇÃO / STEMMING (11 tokens):
+['emb', 'dig', 'mecân', 'pareç', 'verdad', 'base', 'membr', 'mater', 'parec', 'baix', 'qual']
+
+--------------------------------------------------------------------------------
+AVALIAÇÃO 19
+--------------------------------------------------------------------------------
+TEXTO ORIGINAL:
+"Assim que recebi o item, ele estava todo rasgado e quebrado, e eu nem sequer o 
+levei para dentro de casa. É realmente irritante. O produto foi enviado de forma 
+tão descuidada que acabou sendo danificado. Isso é uma piada ou o que?"
+
+[1] TOKENIZAÇÃO (49 tokens):
+['assim', 'que', 'recebi', 'o', 'item', ',', 'ele', 'estava', 'todo', 'rasgado', 'e', 'quebrado', ',', 'e', 'eu', 'nem', 'sequer', 'o', 'levei', 'para', 'dentro', 'de', 'casa', '.', 'é', 'realmente', 'irritante', '.', 'o', 'produto', 'foi', 'enviado', 'de', 'forma', 'tão', 'descuidada', 'que', 'acabou', 'sendo', 'danificado', '.', 'isso', 'é', 'uma', 'piada', 'ou', 'o', 'que', '?']
+
+[2] SEM ARTIGOS (44 tokens):
+['assim', 'que', 'recebi', 'item', ',', 'ele', 'estava', 'todo', 'rasgado', 'e', 'quebrado', ',', 'e', 'eu', 'nem', 'sequer', 'levei', 'para', 'dentro', 'de', 'casa', '.', 'é', 'realmente', 'irritante', '.', 'produto', 'foi', 'enviado', 'de', 'forma', 'tão', 'descuidada', 'que', 'acabou', 'sendo', 'danificado', '.', 'isso', 'é', 'piada', 'ou', 'que', '?']
+
+[3] SEM PONTUAÇÃO (38 tokens):
+['assim', 'que', 'recebi', 'item', 'ele', 'estava', 'todo', 'rasgado', 'e', 'quebrado', 'e', 'eu', 'nem', 'sequer', 'levei', 'para', 'dentro', 'de', 'casa', 'é', 'realmente', 'irritante', 'produto', 'foi', 'enviado', 'de', 'forma', 'tão', 'descuidada', 'que', 'acabou', 'sendo', 'danificado', 'isso', 'é', 'piada', 'ou', 'que']
+
+[4] SEM NÚMEROS (38 tokens):
+['assim', 'que', 'recebi', 'item', 'ele', 'estava', 'todo', 'rasgado', 'e', 'quebrado', 'e', 'eu', 'nem', 'sequer', 'levei', 'para', 'dentro', 'de', 'casa', 'é', 'realmente', 'irritante', 'produto', 'foi', 'enviado', 'de', 'forma', 'tão', 'descuidada', 'que', 'acabou', 'sendo', 'danificado', 'isso', 'é', 'piada', 'ou', 'que']
+
+[5] SEM STOPWORDS (21 tokens):
+['assim', 'recebi', 'item', 'todo', 'rasgado', 'quebrado', 'sequer', 'levei', 'dentro', 'casa', 'realmente', 'irritante', 'produto', 'enviado', 'forma', 'tão', 'descuidada', 'acabou', 'sendo', 'danificado', 'piada']
+
+[6] LEMATIZAÇÃO (21 tokens):
+['assim', 'recebi', 'item', 'todo', 'rasgado', 'quebrado', 'sequer', 'levei', 'dentro', 'casa', 'realmente', 'irritante', 'produto', 'enviado', 'forma', 'tão', 'descuidada', 'acabou', 'sendo', 'danificado', 'piada']
+
+[7] POS TAGGING:
+[('assim', 'NN'), ('recebi', 'NN'), ('item', 'NN'), ('todo', 'JJ'), ('rasgado', 'NN'), ('quebrado', 'NN'), ('sequer', 'NN'), ('levei', 'FW'), ('dentro', 'NN'), ('casa', 'NN'), ('realmente', 'NN'), ('irritante', 'JJ'), ('produto', 'NN'), ('enviado', 'NN'), ('forma', 'NN'), ('tão', 'NN'), ('descuidada', 'NN'), ('acabou', 'NN'), ('sendo', 'NN'), ('danificado', 'NN'), ('piada', 'NN')]
+
+[8] RADICALIZAÇÃO / STEMMING (21 tokens):
+['assim', 'receb', 'it', 'tod', 'rasg', 'quebr', 'sequ', 'lev', 'dentr', 'cas', 'real', 'irrit', 'produt', 'envi', 'form', 'tão', 'descuid', 'acab', 'send', 'danific', 'pi']
+
+--------------------------------------------------------------------------------
+AVALIAÇÃO 20
+--------------------------------------------------------------------------------
+TEXTO ORIGINAL:
+"É simples, diferente dos teclados vendidos nas lojas da mesma marca. Acho que o 
+Bamba tem um pouco mais de qualidade, mas não o recomendo; é muito básico 
+para uso contínuo em cabines. Não recomendo; é péssimo. Sinto que fui enganado."
+
+[1] TOKENIZAÇÃO (49 tokens):
+['é', 'simples', ',', 'diferente', 'dos', 'teclados', 'vendidos', 'nas', 'lojas', 'da', 'mesma', 'marca', '.', 'acho', 'que', 'o', 'bamba', 'tem', 'um', 'pouco', 'mais', 'de', 'qualidade', ',', 'mas', 'não', 'o', 'recomendo', ';', 'é', 'muito', 'básico', 'para', 'uso', 'contínuo', 'em', 'cabines', '.', 'não', 'recomendo', ';', 'é', 'péssimo', '.', 'sinto', 'que', 'fui', 'enganado', '.']
+
+[2] SEM ARTIGOS (46 tokens):
+['é', 'simples', ',', 'diferente', 'dos', 'teclados', 'vendidos', 'nas', 'lojas', 'da', 'mesma', 'marca', '.', 'acho', 'que', 'bamba', 'tem', 'pouco', 'mais', 'de', 'qualidade', ',', 'mas', 'não', 'recomendo', ';', 'é', 'muito', 'básico', 'para', 'uso', 'contínuo', 'em', 'cabines', '.', 'não', 'recomendo', ';', 'é', 'péssimo', '.', 'sinto', 'que', 'fui', 'enganado', '.']
+
+[3] SEM PONTUAÇÃO (38 tokens):
+['é', 'simples', 'diferente', 'dos', 'teclados', 'vendidos', 'nas', 'lojas', 'da', 'mesma', 'marca', 'acho', 'que', 'bamba', 'tem', 'pouco', 'mais', 'de', 'qualidade', 'mas', 'não', 'recomendo', 'é', 'muito', 'básico', 'para', 'uso', 'contínuo', 'em', 'cabines', 'não', 'recomendo', 'é', 'péssimo', 'sinto', 'que', 'fui', 'enganado']
+
+[4] SEM NÚMEROS (38 tokens):
+['é', 'simples', 'diferente', 'dos', 'teclados', 'vendidos', 'nas', 'lojas', 'da', 'mesma', 'marca', 'acho', 'que', 'bamba', 'tem', 'pouco', 'mais', 'de', 'qualidade', 'mas', 'não', 'recomendo', 'é', 'muito', 'básico', 'para', 'uso', 'contínuo', 'em', 'cabines', 'não', 'recomendo', 'é', 'péssimo', 'sinto', 'que', 'fui', 'enganado']
+
+[5] SEM STOPWORDS (20 tokens):
+['simples', 'diferente', 'teclados', 'vendidos', 'lojas', 'mesma', 'marca', 'acho', 'bamba', 'pouco', 'qualidade', 'recomendo', 'básico', 'uso', 'contínuo', 'cabines', 'recomendo', 'péssimo', 'sinto', 'enganado']
+
+[6] LEMATIZAÇÃO (20 tokens):
+['simple', 'diferente', 'teclados', 'vendidos', 'lojas', 'mesma', 'marca', 'acho', 'bamba', 'pouco', 'qualidade', 'recomendo', 'básico', 'uso', 'contínuo', 'cabines', 'recomendo', 'péssimo', 'sinto', 'enganado']
+
+[7] POS TAGGING:
+[('simple', 'JJ'), ('diferente', 'NN'), ('teclados', 'NNS'), ('vendidos', 'VBP'), ('lojas', 'JJ'), ('mesma', 'NN'), ('marca', 'NN'), ('acho', 'JJ'), ('bamba', 'NN'), ('pouco', 'NN'), ('qualidade', 'VBD'), ('recomendo', 'JJ'), ('básico', 'NN'), ('uso', 'JJ'), ('contínuo', 'NN'), ('cabines', 'NNS'), ('recomendo', 'VBP'), ('péssimo', 'NN'), ('sinto', 'NN'), ('enganado', 'NN')]
+
+[8] RADICALIZAÇÃO / STEMMING (20 tokens):
+['simpl', 'difer', 'tecl', 'vend', 'loj', 'mesm', 'marc', 'ach', 'bamb', 'pouc', 'qual', 'recom', 'básic', 'uso', 'contínu', 'cabin', 'recom', 'péss', 'sint', 'engan']
+
+--------------------------------------------------------------------------------
+AVALIAÇÃO 21
+--------------------------------------------------------------------------------
+TEXTO ORIGINAL:
+"O item é bom para uso em jogos, muito leve e esteticamente agradável. A única 
+desvantagem, além da embalagem de baixa qualidade, é que o vendedor não 
+responde quando você tenta obter informações sobre o produto."
+
+[1] TOKENIZAÇÃO (41 tokens):
+['o', 'item', 'é', 'bom', 'para', 'uso', 'em', 'jogos', ',', 'muito', 'leve', 'e', 'esteticamente', 'agradável', '.', 'a', 'única', 'desvantagem', ',', 'além', 'da', 'embalagem', 'de', 'baixa', 'qualidade', ',', 'é', 'que', 'o', 'vendedor', 'não', 'responde', 'quando', 'você', 'tenta', 'obter', 'informações', 'sobre', 'o', 'produto', '.']
+
+[2] SEM ARTIGOS (37 tokens):
+['item', 'é', 'bom', 'para', 'uso', 'em', 'jogos', ',', 'muito', 'leve', 'e', 'esteticamente', 'agradável', '.', 'única', 'desvantagem', ',', 'além', 'da', 'embalagem', 'de', 'baixa', 'qualidade', ',', 'é', 'que', 'vendedor', 'não', 'responde', 'quando', 'você', 'tenta', 'obter', 'informações', 'sobre', 'produto', '.']
+
+[3] SEM PONTUAÇÃO (32 tokens):
+['item', 'é', 'bom', 'para', 'uso', 'em', 'jogos', 'muito', 'leve', 'e', 'esteticamente', 'agradável', 'única', 'desvantagem', 'além', 'da', 'embalagem', 'de', 'baixa', 'qualidade', 'é', 'que', 'vendedor', 'não', 'responde', 'quando', 'você', 'tenta', 'obter', 'informações', 'sobre', 'produto']
+
+[4] SEM NÚMEROS (32 tokens):
+['item', 'é', 'bom', 'para', 'uso', 'em', 'jogos', 'muito', 'leve', 'e', 'esteticamente', 'agradável', 'única', 'desvantagem', 'além', 'da', 'embalagem', 'de', 'baixa', 'qualidade', 'é', 'que', 'vendedor', 'não', 'responde', 'quando', 'você', 'tenta', 'obter', 'informações', 'sobre', 'produto']
+
+[5] SEM STOPWORDS (20 tokens):
+['item', 'bom', 'uso', 'jogos', 'leve', 'esteticamente', 'agradável', 'única', 'desvantagem', 'além', 'embalagem', 'baixa', 'qualidade', 'vendedor', 'responde', 'tenta', 'obter', 'informações', 'sobre', 'produto']
+
+[6] LEMATIZAÇÃO (20 tokens):
+['item', 'bom', 'uso', 'jogos', 'leve', 'esteticamente', 'agradável', 'única', 'desvantagem', 'além', 'embalagem', 'baixa', 'qualidade', 'vendedor', 'responde', 'tenta', 'obter', 'informações', 'sobre', 'produto']
+
+[7] POS TAGGING:
+[('item', 'NN'), ('bom', 'NN'), ('uso', 'JJ'), ('jogos', 'NN'), ('leve', 'VBP'), ('esteticamente', 'NN'), ('agradável', 'NN'), ('única', 'NNP'), ('desvantagem', 'NN'), ('além', 'NN'), ('embalagem', 'NN'), ('baixa', 'NN'), ('qualidade', 'VBD'), ('vendedor', 'NN'), ('responde', 'NN'), ('tenta', 'NN'), ('obter', 'NN'), ('informações', 'NN'), ('sobre', 'NN'), ('produto', 'NN')]
+
+[8] RADICALIZAÇÃO / STEMMING (20 tokens):
+['it', 'bom', 'uso', 'jog', 'lev', 'estetic', 'agrad', 'únic', 'desvant', 'além', 'embal', 'baix', 'qual', 'vend', 'respond', 'tent', 'obt', 'inform', 'sobr', 'produt']
+
+--------------------------------------------------------------------------------
+AVALIAÇÃO 22
+--------------------------------------------------------------------------------
+TEXTO ORIGINAL:
+"Fiz o pedido e, para minha grande surpresa, recebi um pequeno pôster!!!!!! É a 
+primeira vez que isso acontece comigo depois de anos comprando no Aliexpress."
+
+[1] TOKENIZAÇÃO (35 tokens):
+['fiz', 'o', 'pedido', 'e', ',', 'para', 'minha', 'grande', 'surpresa', ',', 'recebi', 'um', 'pequeno', 'pôster', '!', '!', '!', '!', '!', '!', 'é', 'a', 'primeira', 'vez', 'que', 'isso', 'acontece', 'comigo', 'depois', 'de', 'anos', 'comprando', 'no', 'aliexpress', '.']
+
+[2] SEM ARTIGOS (32 tokens):
+['fiz', 'pedido', 'e', ',', 'para', 'minha', 'grande', 'surpresa', ',', 'recebi', 'pequeno', 'pôster', '!', '!', '!', '!', '!', '!', 'é', 'primeira', 'vez', 'que', 'isso', 'acontece', 'comigo', 'depois', 'de', 'anos', 'comprando', 'no', 'aliexpress', '.']
+
+[3] SEM PONTUAÇÃO (23 tokens):
+['fiz', 'pedido', 'e', 'para', 'minha', 'grande', 'surpresa', 'recebi', 'pequeno', 'pôster', 'é', 'primeira', 'vez', 'que', 'isso', 'acontece', 'comigo', 'depois', 'de', 'anos', 'comprando', 'no', 'aliexpress']
+
+[4] SEM NÚMEROS (23 tokens):
+['fiz', 'pedido', 'e', 'para', 'minha', 'grande', 'surpresa', 'recebi', 'pequeno', 'pôster', 'é', 'primeira', 'vez', 'que', 'isso', 'acontece', 'comigo', 'depois', 'de', 'anos', 'comprando', 'no', 'aliexpress']
+
+[5] SEM STOPWORDS (14 tokens):
+['fiz', 'pedido', 'grande', 'surpresa', 'recebi', 'pequeno', 'pôster', 'primeira', 'vez', 'acontece', 'comigo', 'anos', 'comprando', 'aliexpress']
+
+[6] LEMATIZAÇÃO (14 tokens):
+['fiz', 'pedido', 'grande', 'surpresa', 'recebi', 'pequeno', 'pôster', 'primeira', 'vez', 'acontece', 'comigo', 'ano', 'comprando', 'aliexpress']
+
+[7] POS TAGGING:
+[('fiz', 'NN'), ('pedido', 'NN'), ('grande', 'NN'), ('surpresa', 'NN'), ('recebi', 'NN'), ('pequeno', 'NN'), ('pôster', 'NN'), ('primeira', 'NN'), ('vez', 'NN'), ('acontece', 'NN'), ('comigo', 'NN'), ('ano', 'NN'), ('comprando', 'NN'), ('aliexpress', 'NN')]
+
+[8] RADICALIZAÇÃO / STEMMING (14 tokens):
+['fiz', 'ped', 'grand', 'surpr', 'receb', 'pequen', 'pôst', 'prim', 'vez', 'acontec', 'comig', 'ano', 'compr', 'aliexpres']
+
+--------------------------------------------------------------------------------
+AVALIAÇÃO 23
+--------------------------------------------------------------------------------
+TEXTO ORIGINAL:
+"Chegou quebrado, e o material é de baixa qualidade. A conexão USB falhou após 2 
+dias. Não jogue seu dinheiro fora. Caro e ruim!"
+
+[1] TOKENIZAÇÃO (29 tokens):
+['chegou', 'quebrado', ',', 'e', 'o', 'material', 'é', 'de', 'baixa', 'qualidade', '.', 'a', 'conexão', 'usb', 'falhou', 'após', '2', 'dias', '.', 'não', 'jogue', 'seu', 'dinheiro', 'fora', '.', 'caro', 'e', 'ruim', '!']
+
+[2] SEM ARTIGOS (27 tokens):
+['chegou', 'quebrado', ',', 'e', 'material', 'é', 'de', 'baixa', 'qualidade', '.', 'conexão', 'usb', 'falhou', 'após', '2', 'dias', '.', 'não', 'jogue', 'seu', 'dinheiro', 'fora', '.', 'caro', 'e', 'ruim', '!']
+
+[3] SEM PONTUAÇÃO (22 tokens):
+['chegou', 'quebrado', 'e', 'material', 'é', 'de', 'baixa', 'qualidade', 'conexão', 'usb', 'falhou', 'após', '2', 'dias', 'não', 'jogue', 'seu', 'dinheiro', 'fora', 'caro', 'e', 'ruim']
+
+[4] SEM NÚMEROS (21 tokens):
+['chegou', 'quebrado', 'e', 'material', 'é', 'de', 'baixa', 'qualidade', 'conexão', 'usb', 'falhou', 'após', 'dias', 'não', 'jogue', 'seu', 'dinheiro', 'fora', 'caro', 'e', 'ruim']
+
+[5] SEM STOPWORDS (14 tokens):
+['chegou', 'quebrado', 'material', 'baixa', 'qualidade', 'conexão', 'usb', 'falhou', 'após', 'dias', 'jogue', 'dinheiro', 'caro', 'ruim']
+
+[6] LEMATIZAÇÃO (14 tokens):
+['chegou', 'quebrado', 'material', 'baixa', 'qualidade', 'conexão', 'usb', 'falhou', 'após', 'dia', 'jogue', 'dinheiro', 'caro', 'ruim']
+
+[7] POS TAGGING:
+[('chegou', 'NN'), ('quebrado', 'VBZ'), ('material', 'JJ'), ('baixa', 'NN'), ('qualidade', 'NN'), ('conexão', 'NN'), ('usb', 'JJ'), ('falhou', 'NN'), ('após', 'IN'), ('dia', 'JJ'), ('jogue', 'NN'), ('dinheiro', 'NN'), ('caro', 'NN'), ('ruim', 'NN')]
+
+[8] RADICALIZAÇÃO / STEMMING (14 tokens):
+['cheg', 'quebr', 'mater', 'baix', 'qual', 'conex', 'usb', 'falh', 'após', 'dia', 'jog', 'dinh', 'car', 'ruim']
+
+--------------------------------------------------------------------------------
+AVALIAÇÃO 24
+--------------------------------------------------------------------------------
+TEXTO ORIGINAL:
+"Infelizmente, o pedido chegou de forma incorreta, o teclado estava quebrado ao 
+meio, o mouse faz um barulho estranho por dentro e desconecta do PC de vez em 
+quando. Eu estava muito animado com esses produtos, mas eles não funcionaram 
+para mim."
+
+[1] TOKENIZAÇÃO (48 tokens):
+['infelizmente', ',', 'o', 'pedido', 'chegou', 'de', 'forma', 'incorreta', ',', 'o', 'teclado', 'estava', 'quebrado', 'ao', 'meio', ',', 'o', 'mouse', 'faz', 'um', 'barulho', 'estranho', 'por', 'dentro', 'e', 'desconecta', 'do', 'pc', 'de', 'vez', 'em', 'quando', '.', 'eu', 'estava', 'muito', 'animado', 'com', 'esses', 'produtos', ',', 'mas', 'eles', 'não', 'funcionaram', 'para', 'mim', '.']
+
+[2] SEM ARTIGOS (44 tokens):
+['infelizmente', ',', 'pedido', 'chegou', 'de', 'forma', 'incorreta', ',', 'teclado', 'estava', 'quebrado', 'ao', 'meio', ',', 'mouse', 'faz', 'barulho', 'estranho', 'por', 'dentro', 'e', 'desconecta', 'do', 'pc', 'de', 'vez', 'em', 'quando', '.', 'eu', 'estava', 'muito', 'animado', 'com', 'esses', 'produtos', ',', 'mas', 'eles', 'não', 'funcionaram', 'para', 'mim', '.']
+
+[3] SEM PONTUAÇÃO (38 tokens):
+['infelizmente', 'pedido', 'chegou', 'de', 'forma', 'incorreta', 'teclado', 'estava', 'quebrado', 'ao', 'meio', 'mouse', 'faz', 'barulho', 'estranho', 'por', 'dentro', 'e', 'desconecta', 'do', 'pc', 'de', 'vez', 'em', 'quando', 'eu', 'estava', 'muito', 'animado', 'com', 'esses', 'produtos', 'mas', 'eles', 'não', 'funcionaram', 'para', 'mim']
+
+[4] SEM NÚMEROS (38 tokens):
+['infelizmente', 'pedido', 'chegou', 'de', 'forma', 'incorreta', 'teclado', 'estava', 'quebrado', 'ao', 'meio', 'mouse', 'faz', 'barulho', 'estranho', 'por', 'dentro', 'e', 'desconecta', 'do', 'pc', 'de', 'vez', 'em', 'quando', 'eu', 'estava', 'muito', 'animado', 'com', 'esses', 'produtos', 'mas', 'eles', 'não', 'funcionaram', 'para', 'mim']
+
+[5] SEM STOPWORDS (20 tokens):
+['infelizmente', 'pedido', 'chegou', 'forma', 'incorreta', 'teclado', 'quebrado', 'meio', 'mouse', 'faz', 'barulho', 'estranho', 'dentro', 'desconecta', 'pc', 'vez', 'animado', 'produtos', 'funcionaram', 'mim']
+
+[6] LEMATIZAÇÃO (20 tokens):
+['infelizmente', 'pedido', 'chegou', 'forma', 'incorreta', 'teclado', 'quebrado', 'meio', 'mouse', 'faz', 'barulho', 'estranho', 'dentro', 'desconecta', 'pc', 'vez', 'animado', 'produtos', 'funcionaram', 'mim']
+
+[7] POS TAGGING:
+[('infelizmente', 'NN'), ('pedido', 'NN'), ('chegou', 'NN'), ('forma', 'NN'), ('incorreta', 'NN'), ('teclado', 'NN'), ('quebrado', 'NN'), ('meio', 'NN'), ('mouse', 'NN'), ('faz', 'NN'), ('barulho', 'NN'), ('estranho', 'FW'), ('dentro', 'NN'), ('desconecta', 'JJ'), ('pc', 'NN'), ('vez', 'NN'), ('animado', 'NN'), ('produtos', 'NN'), ('funcionaram', 'NN'), ('mim', 'NN')]
+
+[8] RADICALIZAÇÃO / STEMMING (20 tokens):
+['infeliz', 'ped', 'cheg', 'form', 'incorret', 'tecl', 'quebr', 'mei', 'mous', 'faz', 'barulh', 'estranh', 'dentr', 'desconect', 'pc', 'vez', 'anim', 'produt', 'funcion', 'mim']
+
+--------------------------------------------------------------------------------
+AVALIAÇÃO 25
+--------------------------------------------------------------------------------
+TEXTO ORIGINAL:
+"Mouse e teclado chegaram quebrados. O teclado RGB não liga de jeito nenhum, e o 
+mouse não faz clique direito porque veio com o botão descolado. É uma pena, 
+porque eu realmente gosto do fato de o teclado ser silencioso ao digitar."
+
+[1] TOKENIZAÇÃO (47 tokens):
+['mouse', 'e', 'teclado', 'chegaram', 'quebrados', '.', 'o', 'teclado', 'rgb', 'não', 'liga', 'de', 'jeito', 'nenhum', ',', 'e', 'o', 'mouse', 'não', 'faz', 'clique', 'direito', 'porque', 'veio', 'com', 'o', 'botão', 'descolado', '.', 'é', 'uma', 'pena', ',', 'porque', 'eu', 'realmente', 'gosto', 'do', 'fato', 'de', 'o', 'teclado', 'ser', 'silencioso', 'ao', 'digitar', '.']
+
+[2] SEM ARTIGOS (42 tokens):
+['mouse', 'e', 'teclado', 'chegaram', 'quebrados', '.', 'teclado', 'rgb', 'não', 'liga', 'de', 'jeito', 'nenhum', ',', 'e', 'mouse', 'não', 'faz', 'clique', 'direito', 'porque', 'veio', 'com', 'botão', 'descolado', '.', 'é', 'pena', ',', 'porque', 'eu', 'realmente', 'gosto', 'do', 'fato', 'de', 'teclado', 'ser', 'silencioso', 'ao', 'digitar', '.']
+
+[3] SEM PONTUAÇÃO (37 tokens):
+['mouse', 'e', 'teclado', 'chegaram', 'quebrados', 'teclado', 'rgb', 'não', 'liga', 'de', 'jeito', 'nenhum', 'e', 'mouse', 'não', 'faz', 'clique', 'direito', 'porque', 'veio', 'com', 'botão', 'descolado', 'é', 'pena', 'porque', 'eu', 'realmente', 'gosto', 'do', 'fato', 'de', 'teclado', 'ser', 'silencioso', 'ao', 'digitar']
+
+[4] SEM NÚMEROS (37 tokens):
+['mouse', 'e', 'teclado', 'chegaram', 'quebrados', 'teclado', 'rgb', 'não', 'liga', 'de', 'jeito', 'nenhum', 'e', 'mouse', 'não', 'faz', 'clique', 'direito', 'porque', 'veio', 'com', 'botão', 'descolado', 'é', 'pena', 'porque', 'eu', 'realmente', 'gosto', 'do', 'fato', 'de', 'teclado', 'ser', 'silencioso', 'ao', 'digitar']
+
+[5] SEM STOPWORDS (25 tokens):
+['mouse', 'teclado', 'chegaram', 'quebrados', 'teclado', 'rgb', 'liga', 'jeito', 'nenhum', 'mouse', 'faz', 'clique', 'direito', 'porque', 'veio', 'botão', 'descolado', 'pena', 'porque', 'realmente', 'gosto', 'fato', 'teclado', 'silencioso', 'digitar']
+
+[6] LEMATIZAÇÃO (25 tokens):
+['mouse', 'teclado', 'chegaram', 'quebrados', 'teclado', 'rgb', 'liga', 'jeito', 'nenhum', 'mouse', 'faz', 'clique', 'direito', 'porque', 'veio', 'botão', 'descolado', 'pena', 'porque', 'realmente', 'gosto', 'fato', 'teclado', 'silencioso', 'digitar']
+
+[7] POS TAGGING:
+[('mouse', 'NN'), ('teclado', 'NN'), ('chegaram', 'NN'), ('quebrados', 'NN'), ('teclado', 'NN'), ('rgb', 'NN'), ('liga', 'NN'), ('jeito', 'NN'), ('nenhum', 'NN'), ('mouse', 'NN'), ('faz', 'NN'), ('clique', 'NN'), ('direito', 'NN'), ('porque', 'NN'), ('veio', 'NN'), ('botão', 'NN'), ('descolado', 'NN'), ('pena', 'NN'), ('porque', 'NN'), ('realmente', 'NN'), ('gosto', 'NN'), ('fato', 'NN'), ('teclado', 'NN'), ('silencioso', 'NN'), ('digitar', 'NN')]
+
+[8] RADICALIZAÇÃO / STEMMING (25 tokens):
+['mous', 'tecl', 'cheg', 'quebr', 'tecl', 'rgb', 'lig', 'jeit', 'nenhum', 'mous', 'faz', 'cliqu', 'direit', 'porqu', 'vei', 'bot', 'descol', 'pen', 'porqu', 'real', 'gost', 'fat', 'tecl', 'silenci', 'digit']
+
+================================================================================
+RESUMO DOS TOKENS
+================================================================================
+Total inicial:              1101
+Sem artigos:               1018
+Sem pontuação:             839
+Sem números:               833
+Sem stopwords:             491
+Após lematização:          491
+Após radicalização:        491
+================================================================================
